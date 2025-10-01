@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: 0de0d6d20cf64414d8af219747cbe8cd
+guid: 87fef8e2cc395654eb11ff377156d833
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1673732733077124514
-    second: trees_0
-  - first:
-      213: 3611188691014843535
-    second: trees_1
-  - first:
-      213: 2249915519335348110
-    second: trees_2
-  - first:
-      213: 5223556475179290604
-    second: trees_3
-  - first:
-      213: 384058854656272681
-    second: trees_4
-  - first:
-      213: 3818217323743452925
-    second: trees_5
+      213: -4920800965947926530
+    second: Background1-1 (2)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -141,133 +126,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: trees_0
+      name: Background1_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 1039
-        width: 1376
-        height: 997
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e5a8ef372f4b5c8e0800000000000000
-      internalID: -1673732733077124514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trees_1
-      rect:
-        serializedVersion: 2
-        x: 1404
-        y: 1038
-        width: 1001
-        height: 998
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f8cf8d84bf48d1230800000000000000
-      internalID: 3611188691014843535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trees_2
-      rect:
-        serializedVersion: 2
-        x: 2520
-        y: 1034
-        width: 279
-        height: 964
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e873f988e3e493f10800000000000000
-      internalID: 2249915519335348110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trees_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 50
-        width: 1526
-        height: 968
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cefc04740fccd7840800000000000000
-      internalID: 5223556475179290604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: trees_4
-      rect:
-        serializedVersion: 2
-        x: 1558
         y: 0
-        width: 911
-        height: 1018
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92961a45e73745500800000000000000
-      internalID: 384058854656272681
+      spriteID: ef7564ec79dc5bbb0800000000000000
+      internalID: -4920800965947926530
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: trees_5
+      name: Background1_2
       rect:
         serializedVersion: 2
-        x: 2530
-        y: 40
-        width: 314
-        height: 966
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 1920
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dfe98f81d680df430800000000000000
-      internalID: 3818217323743452925
+      spriteID: 2192e5a2952da944ab82d9863ef72603
+      internalID: -1512325334
       vertices: []
       indices: 
       edges: []
@@ -276,7 +173,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 384c197c13c775b498317a80c78e3d23
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +183,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      trees_0: -1673732733077124514
-      trees_1: 3611188691014843535
-      trees_2: 2249915519335348110
-      trees_3: 5223556475179290604
-      trees_4: 384058854656272681
-      trees_5: 3818217323743452925
+      Background1_1: -4920800965947926530
+      Background1_2: -1512325334
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
