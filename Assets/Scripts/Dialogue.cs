@@ -35,7 +35,6 @@ public class Dialogue : MonoBehaviour
     private void ToggleWindow(bool show)
     {
         Debug.Log("show/hide");
-        window.SetActive(show);
         text.SetActive(show);
 
     }
