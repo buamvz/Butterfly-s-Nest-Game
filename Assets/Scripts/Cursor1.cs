@@ -11,6 +11,9 @@ public class Cursor1 : MonoBehaviour
     [SerializeField] Sprite cursorDefault;
     [SerializeField] Sprite cursorClick;
     [SerializeField] Sprite cursorHover;
+    [SerializeField] Sprite cursorForward;
+    [SerializeField] Sprite cursorLeft;
+    [SerializeField] Sprite cursorRight;
 
 
     private void Start()
@@ -33,10 +36,23 @@ public class Cursor1 : MonoBehaviour
             {
                 spriteRenderer.sprite = cursorHover;
             }
-            else
-                spriteRenderer.sprite = cursorDefault;
+            if (hit.collider.CompareTag("GoForward"))
+            {
+                spriteRenderer.sprite = cursorForward;
+            }
+            if (hit.collider.CompareTag("GoLeft"))
+            {
+                spriteRenderer.sprite = cursorLeft;
+            }
+            if (hit.collider.CompareTag("GoRight"))
+            {
+                spriteRenderer.sprite = cursorRight;
+            }
+
 
         }
+        else
+            spriteRenderer.sprite = cursorDefault;
 
 
         //click sprite
