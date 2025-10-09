@@ -6,6 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 
     [SerializeField] BoxCollider2D colliderInteraction;
     [SerializeField] int dialogueStartLine;
+    [SerializeField] float thisWritingSpeed;
     
    
     void Update()
@@ -21,6 +22,7 @@ public class DialogueTrigger : MonoBehaviour
             if (hit.collider != null && hit.collider == colliderInteraction)
             {
                 dialogueScript.indexStart = dialogueStartLine;
+                dialogueScript.writingSpeed = thisWritingSpeed;
                 //dialogueScript.indexEnd = dialogueEndLine;
                 dialogueScript.StartDialogue();
             }

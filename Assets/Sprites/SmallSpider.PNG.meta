@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 0717641029d247e42b2c6225778a1b90
+guid: 0d319fab2637b2a40a7f556407270500
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4084085987643756558
-    second: SmallSpider 1_0
+      213: 6382865779325743107
+    second: SmallSpider_0
   - first:
-      213: -1490773493401994811
-    second: SmallSpider 1_1
+      213: -879303213979077487
+    second: SmallSpider_1
   - first:
-      213: 2213739517697173103
-    second: SmallSpider 1_2
+      213: 7233975553659256863
+    second: SmallSpider_2
   - first:
-      213: 6019691809323064184
-    second: SmallSpider 1_3
+      213: 7305049291984156663
+    second: SmallSpider_3
   - first:
-      213: 1776533488026533721
-    second: SmallSpider 1_4
+      213: -6401991395103263616
+    second: SmallSpider_4
   - first:
-      213: 4410554968064571636
-    second: SmallSpider 1_5
+      213: 2033755355750616856
+    second: SmallSpider_5
   - first:
-      213: 3580056738284998059
-    second: SmallSpider 1_6
+      213: 7705505397006437660
+    second: SmallSpider_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -144,155 +144,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SmallSpider 1_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 430
-        width: 390
-        height: 348
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e0018ad31969da830800000000000000
-      internalID: 4084085987643756558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SmallSpider 1_1
-      rect:
-        serializedVersion: 2
-        x: 503
-        y: 570
-        width: 257
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c9b43df765bf4be0800000000000000
-      internalID: -1490773493401994811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SmallSpider 1_2
-      rect:
-        serializedVersion: 2
-        x: 809
-        y: 409
-        width: 410
-        height: 402
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f66a599cc58c8be10800000000000000
-      internalID: 2213739517697173103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SmallSpider 1_3
-      rect:
-        serializedVersion: 2
-        x: 1217
-        y: 413
-        width: 406
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 87b97009ecd3a8350800000000000000
-      internalID: 6019691809323064184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SmallSpider 1_4
+      name: SmallSpider_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 408
-        height: 407
+        width: 405
+        height: 406
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95f386d7bc387a810800000000000000
-      internalID: 1776533488026533721
+      spriteID: 08433cfcebe8727a0800000000000000
+      internalID: -6401991395103263616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SmallSpider 1_5
+      name: SmallSpider_2
       rect:
         serializedVersion: 2
-        x: 469
-        y: 90
-        width: 298
-        height: 275
+        x: 407
+        y: 0
+        width: 403
+        height: 406
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4f8b2d51060753d30800000000000000
-      internalID: 4410554968064571636
+      spriteID: c6b3ecd4efe450741bdc37c95b40cc86
+      internalID: -1518900710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SmallSpider 1_6
+      name: SmallSpider_0
       rect:
         serializedVersion: 2
-        x: 928
-        y: 167
-        width: 207
-        height: 159
+        x: 810
+        y: 0
+        width: 405
+        height: 406
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bad8831b2aaeea130800000000000000
-      internalID: 3580056738284998059
+      spriteID: 9907cd2ea90b90c4eba2d79fc5d40aa8
+      internalID: -1525392299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallSpider_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 407
+        width: 405
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b0a73cba8cea24ba0b5f38191c8594
+      internalID: -1311510989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallSpider_1
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 407
+        width: 405
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045ae11f81514ff48b6de8d5c12a828c
+      internalID: 1570808540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallSpider_5
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 407
+        width: 405
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1078d8b4a208104f83d5f72cd63c217
+      internalID: 730918370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SmallSpider_6
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 407
+        width: 405
+        height: 406
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56626183a989b0b48aa8806a8e47cdd6
+      internalID: 1642341507
       vertices: []
       indices: 
       edges: []
@@ -301,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6f0478bb47c07334e837b9a66b369f1d
     internalID: 0
     vertices: []
     indices: 
@@ -310,7 +310,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SmallSpider_0: -1525392299
+      SmallSpider_1: 1570808540
+      SmallSpider_2: -1518900710
+      SmallSpider_3: -1311510989
+      SmallSpider_4: -6401991395103263616
+      SmallSpider_5: 730918370
+      SmallSpider_6: 1642341507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
