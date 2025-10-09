@@ -5,7 +5,8 @@ public class MainMenu : MonoBehaviour
 {
     public void NewGame()
     {
-        SceneManager.LoadScene("Scene 1");
+        Debug.Log("New Game");
+        SceneManager.LoadScene("Scene1_forestStart");
     }
 
     public void LoadGame()
