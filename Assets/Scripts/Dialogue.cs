@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Dialogue : MonoBehaviour
 {
-
+    //note: 09/10/25 trying to allow for dialogue options - might just need new script
 
     public GameObject text;
     public TMP_Text dialogueText;
@@ -16,6 +16,7 @@ public class Dialogue : MonoBehaviour
 
     public int indexStart;
     public int indexEnd;
+    public int index;
 
     private int charIndex;
     public float writingSpeed;
@@ -24,6 +25,10 @@ public class Dialogue : MonoBehaviour
     public bool waitForNext;
 
     public bool waiting;
+
+
+    //multi dialogue or not
+    public bool multipleDialogues;
 
     void Start()
     {
@@ -57,7 +62,6 @@ public class Dialogue : MonoBehaviour
 
     public void GetDialogue()
     {
-        //indexStart = i;
         charIndex = 0;
         dialogueText.text = string.Empty;
         
@@ -76,30 +80,33 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator RunDialogue()
     {
-        yield return StartCoroutine(Writing());
+        if(multipleDialogues ==  false)
+            yield return StartCoroutine(Writing());
+        else if (multipleDialogues == true)
+            yield return StartCoroutine(WritingMulti());
         waiting = false;
     }
 
-    //IEnumerator Writing()
-    //{
-    //    string currentDialogue = dialogues[indexStart];
-    //    dialogueText.text += currentDialogue[charIndex];
-    //    charIndex++;
+    IEnumerator WritingMulti()
+    {
+        string currentDialogue = dialogues[indexStart];
+        dialogueText.text += currentDialogue[charIndex];
+        charIndex++;
 
-    //    if(charIndex < currentDialogue.Length)
-    //    {
-    //        yield return new WaitForSeconds(writingSpeed);
-    //        StartCoroutine(Writing());
+        if (charIndex < currentDialogue.Length)
+        {
+            yield return new WaitForSeconds(writingSpeed);
+            StartCoroutine(Writing());
 
-    //    }
-    //    else
-    //    {
-    //        waitForNext = true;
-    //    }
+        }
+        else
+        {
+            waitForNext = true;
+        }
 
-    //}
+    }
 
-  
+
     private bool isTyping;
     public IEnumerator Writing()   //chatgpt vr
     {
@@ -166,11 +173,26 @@ public class Dialogue : MonoBehaviour
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 
-            if (waitForNext)
+            if (waitForNext && multipleDialogues == false)
             {
                 waitForNext = false;
                 //indexStart++;
                 if (indexStart < dialogues.Count)
+                {
+                    GetDialogue();
+                }
+                else
+                {
+                    EndDialogue();
+
+                }
+            }
+
+            if (waitForNext && multipleDialogues == true)
+            {
+                waitForNext = false;
+                //indexStart++;
+                if (index < dialogues.Count)
                 {
                     GetDialogue();
                 }
