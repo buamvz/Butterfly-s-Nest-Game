@@ -13,7 +13,7 @@ public class DragAll : MonoBehaviour
         {
             // Cast our own ray.
             RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero,
-                                                 float.PositiveInfinity, movableLayers);
+                                                 float.PositiveInfinity, LayerMask.GetMask("Moveable"));
             if (hit)
             {
                 // If we hit, record the transform of the object we hit.
