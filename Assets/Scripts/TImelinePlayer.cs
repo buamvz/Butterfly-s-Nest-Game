@@ -11,8 +11,14 @@ public class TImelinePlayer : MonoBehaviour
     [SerializeField] PlayableDirector timelineDirector;
 
     [SerializeField] GameObject interactable;
+    [SerializeField] GameObject spiderObject;
 
     [SerializeField] Animator animator;
+
+    private void Start()
+    {
+        spiderObject.SetActive(false);
+    }
 
     void Update()
     {
@@ -37,11 +43,14 @@ public class TImelinePlayer : MonoBehaviour
 
     IEnumerator PlayTimeline()
     {
+        spiderObject.SetActive(true);
+
         timelineDirector.Play();
         yield return new WaitForSeconds(3.25f);
         Debug.Log("spider");
         interactable.SetActive(false);
         animator.SetTrigger("Active");
+        
     }
 }
 

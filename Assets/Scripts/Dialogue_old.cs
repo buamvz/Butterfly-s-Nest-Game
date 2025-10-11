@@ -4,10 +4,9 @@ using TMPro;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 
-public class Dialogue : MonoBehaviour
+public class Dialogue_old : MonoBehaviour
 {
     //note: 11/10/25 try having index end be like - index++ -> if index => index end -> end dialoge
-    //old code is safe in dialogue old for ref
 
     public GameObject text;
     public TMP_Text dialogueText;
@@ -16,7 +15,6 @@ public class Dialogue : MonoBehaviour
     public List<string> dialogues;
 
     public int indexStart;
-    public int indexEnd;
 
     public int index;
 
@@ -70,7 +68,8 @@ public class Dialogue : MonoBehaviour
         charIndex = 0;
         dialogueText.text = string.Empty;
         
-        StartCoroutine(Writing());
+        //StartCoroutine(Writing());
+        StartCoroutine(RunDialogue());
 
     }
 
@@ -79,6 +78,15 @@ public class Dialogue : MonoBehaviour
         charIndex = 0;
         ToggleWindow(false);
 
+        waiting = false;
+    }
+
+    IEnumerator RunDialogue()
+    {
+        if (multipleDialogues ==  false)
+            yield return StartCoroutine(Writing());
+        else if (multipleDialogues == true)
+            yield return StartCoroutine(WritingMulti());
         waiting = false;
     }
 
@@ -111,14 +119,22 @@ public class Dialogue : MonoBehaviour
 
     public IEnumerator Writing()   //chatgpt vr
     {
+        // 1) Validate indexStart
+        if (indexStart < 0 || indexStart >= dialogues.Count)
+        {
+            Debug.LogError($"indexStart {indexStart} out of range (0..{dialogues.Count - 1})");
+            yield break;
+        }
 
-        yield return new WaitForSeconds(writingSpeed);
+        waitForNext = false;
 
         string currentDialogue = dialogues[indexStart];
 
+        // 2) Reset before starting a new line
+        dialogueText.text = string.Empty;
         charIndex = 0;
 
-        //this works (chatgpt)
+        // 3) Loop instead of recursive coroutines
         while (charIndex < currentDialogue.Length)
         {
             dialogueText.text += currentDialogue[charIndex];
@@ -126,19 +142,7 @@ public class Dialogue : MonoBehaviour
             yield return new WaitForSeconds(writingSpeed);
         }
 
-        //this doesn't (tutorial)
-        //if (charIndex < currentDialogue.Length)
-        //{
-        //    //Wait x seconds 
-        //    yield return new WaitForSeconds(writingSpeed);
-        //    //Restart the same process
-        //    StartCoroutine(Writing());
-        //}
-        //else
-        //{
-        //    //End this sentence and wait for the next one
-        //    waitForNext = true;
-        //}
+        waitForNext = true;
     }
 
     IEnumerator WaitSeconds()

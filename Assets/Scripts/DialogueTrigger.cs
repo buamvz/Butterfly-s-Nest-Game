@@ -24,8 +24,8 @@ public class DialogueTrigger : MonoBehaviour
                 //dialogueScript.indexEnd = dialogueEndLine;
                 dialogueScript.StartDialogue();
             }
-            else
-                dialogueScript.EndDialogue(); 
+            //else
+            //    dialogueScript.EndDialogue(); 
         }
 
 
