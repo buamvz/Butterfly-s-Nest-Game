@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class Dialogue : MonoBehaviour
 {
-    //note: 11/10/25 try having index end be like - index++ -> if index => index end -> end dialoge
-    //old code is safe in dialogue old for ref
 
     public GameObject text;
     public TMP_Text dialogueText;
@@ -82,30 +80,6 @@ public class Dialogue : MonoBehaviour
         waitForNext = false;
     }
 
-    //for writing multiple lines
-    IEnumerator WritingMulti()
-    {
-        yield return new WaitForSeconds(writingSpeed);
-
-        string currentDialogue = dialogues[index];
-        //Write the character
-        dialogueText.text += currentDialogue[charIndex];
-        //increase the character index 
-        charIndex++;
-        //Make sure you have reached the end of the sentence
-        if (charIndex < currentDialogue.Length)
-        {
-            //Wait x seconds 
-            yield return new WaitForSeconds(writingSpeed);
-            //Restart the same process
-            StartCoroutine(WritingMulti());
-        }
-        else
-        {
-            //End this sentence and wait for the next one
-            waitForNext = true;
-        }
-    }
 
 
 
