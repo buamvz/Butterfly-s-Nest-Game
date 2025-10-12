@@ -1577,6 +1577,7 @@ MonoBehaviour:
   colliderInteraction: {fileID: 891601537}
   timelineDirector: {fileID: 313233790}
   interactable: {fileID: 1635696769}
+  spiderObject: {fileID: 1180376022}
   animator: {fileID: 1180376023}
 --- !u!1 &894848686
 GameObject:
@@ -3030,7 +3031,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 150
   m_Sprite: {fileID: -577436947000661451, guid: f015ca9a63b41804fb895df514f7caf2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3126,11 +3127,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: index
-      value: 2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: indexEnd
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: writingSpeed
-      value: 0.1
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: multipleDialogues
