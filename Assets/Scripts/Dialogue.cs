@@ -30,7 +30,7 @@ public class Dialogue : MonoBehaviour
 
 
     //multi dialogue or not
-    public bool multipleDialogues;
+    //public bool multipleDialogues;
 
     void Start()
     {
@@ -47,19 +47,16 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogue()
     {
+
+        if (started)
+            return;
+
         waiting = true;
 
         charIndex = 0;
         ToggleWindow(true);
-        if (multipleDialogues == false)
-            GetDialogue(indexStart);
-        else if (multipleDialogues == true)
-            GetDialogue(index);
 
-        Debug.Log("started");
-
-        if (started)
-            return;
+        GetDialogue(indexStart);
 
         started = true;
     }
@@ -79,7 +76,10 @@ public class Dialogue : MonoBehaviour
         charIndex = 0;
         ToggleWindow(false);
 
+
         waiting = false;
+        started = false;
+        waitForNext = false;
     }
 
     //for writing multiple lines
@@ -114,7 +114,7 @@ public class Dialogue : MonoBehaviour
 
         yield return new WaitForSeconds(writingSpeed);
 
-        string currentDialogue = dialogues[indexStart];
+        string currentDialogue = dialogues[index];
 
         charIndex = 0;
 
@@ -126,19 +126,8 @@ public class Dialogue : MonoBehaviour
             yield return new WaitForSeconds(writingSpeed);
         }
 
-        //this doesn't (tutorial)
-        //if (charIndex < currentDialogue.Length)
-        //{
-        //    //Wait x seconds 
-        //    yield return new WaitForSeconds(writingSpeed);
-        //    //Restart the same process
-        //    StartCoroutine(Writing());
-        //}
-        //else
-        //{
-        //    //End this sentence and wait for the next one
-        //    waitForNext = true;
-        //}
+        waitForNext = true;
+
     }
 
     IEnumerator WaitSeconds()
@@ -148,49 +137,36 @@ public class Dialogue : MonoBehaviour
 
     private void Update()
     {
-        if(waiting == true)
+        //if(waiting == true)
+        //    return;
+        if (!started)
             return;
 
-    
 
         if (Input.GetMouseButtonDown(0))
         {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 
-            if (hit.collider == null)
-                return;
+            //if (hit.collider == null)
+            //    return;
                 
 
-            if (waitForNext && multipleDialogues == false)
-            {
-                waitForNext = false;
-
-                if (indexStart < dialogues.Count)
-                {
-                    GetDialogue(indexStart);
-                }
-                else
-                {
-                    EndDialogue();
-
-                }
-            }
-
-            if (waitForNext && multipleDialogues == true)
+            if (waitForNext)
             {
                 waitForNext = false;
                 index++;
-                if (index < dialogues.Count)
+
+                if (index <= indexEnd)
                 {
                     GetDialogue(index);
                 }
                 else
                 {
                     EndDialogue();
-
                 }
             }
+
 
         }
     }

@@ -1395,6 +1395,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 361508334}
   colliderInteraction: {fileID: 832110388}
   dialogueStartLine: 0
+  dialogueEndLine: 1
 --- !u!1 &870890327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,6 +2744,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1535319189}
   colliderInteraction: {fileID: 1180376028}
   dialogueStartLine: 0
+  dialogueEndLine: 1
 --- !u!61 &1180376028
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2923,7 +2925,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueScript: {fileID: 361508334}
   colliderInteraction: {fileID: 1448516551}
-  dialogueStartLine: 1
+  dialogueStartLine: 2
+  dialogueEndLine: 2
 --- !u!61 &1448516551
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4534,7 +4537,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueScript: {fileID: 361508334}
   colliderInteraction: {fileID: 2045831893}
-  dialogueStartLine: 2
+  dialogueStartLine: 3
+  dialogueEndLine: 4
 --- !u!61 &2045831893
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4804,6 +4808,39 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1716320043}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: indexEnd
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: A sign?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[1]'
+      value: I can't read it from here, I'll have to get closer...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[2]'
+      value: So many mushrooms... At least I know I'm in the right place.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[3]'
+      value: This forest is so abandoned, the spiders must be forced to make webs
+        this big just to catch food.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[4]'
+      value: I wonder if they could evolve to eat the mushrooms...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[5]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6225780038206617434, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: m_Name
       value: RoomDialogue

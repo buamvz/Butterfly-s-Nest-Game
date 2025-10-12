@@ -6,6 +6,7 @@ public class DialogueTrigger : MonoBehaviour
 
     [SerializeField] BoxCollider2D colliderInteraction;
     [SerializeField] int dialogueStartLine;
+    [SerializeField] int dialogueEndLine; 
     
    
     void Update()
@@ -21,11 +22,13 @@ public class DialogueTrigger : MonoBehaviour
             if (hit.collider != null && hit.collider == colliderInteraction)
             {
                 dialogueScript.indexStart = dialogueStartLine;
-                //dialogueScript.indexEnd = dialogueEndLine;
+                dialogueScript.indexEnd = dialogueEndLine;
                 dialogueScript.StartDialogue();
             }
-            //else
-            //    dialogueScript.EndDialogue(); 
+            else
+            {
+                dialogueScript.EndDialogue();
+            }
         }
 
 
