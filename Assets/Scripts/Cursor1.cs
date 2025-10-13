@@ -49,17 +49,21 @@ public class Cursor1 : MonoBehaviour
                 spriteRenderer.sprite = cursorRight;
             }
 
-
+            //click sprite
+            if (hit.collider.CompareTag("Bug") && Input.GetMouseButton(0))
+            {
+                spriteRenderer.sprite = cursorClick;
+            }
+            else if (Input.GetMouseButtonUp(0))
+            {
+                spriteRenderer.sprite = cursorDefault;
+            }
         }
         else
             spriteRenderer.sprite = cursorDefault;
 
 
-        ////click sprite
-        //if (Input.GetMouseButton(0))
-        //    spriteRenderer.sprite = cursorClick;
-        //if (Input.GetMouseButtonUp(0))
-        //    spriteRenderer.sprite = cursorDefault;
+
 
     }
 

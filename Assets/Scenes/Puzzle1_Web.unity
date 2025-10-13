@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 135395042}
   m_Layer: 0
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2112,6 +2112,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63256d6f81cac94a98ec29e2e640357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collidersToDisable:
+  - {fileID: 2051260831}
+  - {fileID: 1430597281}
+  - {fileID: 135395042}
 --- !u!4 &1348391845
 Transform:
   m_ObjectHideFlags: 0
@@ -2234,7 +2238,7 @@ GameObject:
   - component: {fileID: 1430597281}
   m_Layer: 0
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2910,9 +2914,10 @@ GameObject:
   - component: {fileID: 2051260830}
   - component: {fileID: 2051260829}
   - component: {fileID: 2051260831}
+  - component: {fileID: 2051260832}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3076,6 +3081,21 @@ PolygonCollider2D:
       - {x: 0.5, y: -0.5}
       - {x: 0.5, y: 0.5}
   m_UseDelaunayMesh: 0
+--- !u!114 &2051260832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051260825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 600, y: 200}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2106217585
 GameObject:
   m_ObjectHideFlags: 0

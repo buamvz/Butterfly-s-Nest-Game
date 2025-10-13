@@ -1,16 +1,35 @@
-using UnityEngine;
 using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class PuzzleAreaChecker : MonoBehaviour
 {
     private int bugsInArea = 0;
-    public static event Action OnWebCleared; 
+    public static event Action OnWebCleared;
+
+    //to turn on and off the prize colliders
+    [SerializeField] List<PolygonCollider2D> collidersToDisable;
+
+    //prize colliders off when started
+    private void Awake()
+    {
+        ToggleColliders(false);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Bug"))
         {
             bugsInArea++;
+        }
+    }
+
+    private void ToggleColliders(bool show)
+    {
+        foreach (PolygonCollider2D collider in collidersToDisable)
+        {
+            if (collider != null)
+                collider.enabled = show;
         }
     }
 
@@ -24,6 +43,7 @@ public class PuzzleAreaChecker : MonoBehaviour
             {
                 bugsInArea = 0;
                 Debug.Log("web is all cleared");
+                ToggleColliders(true);
                 OnWebCleared?.Invoke();
             }
         }

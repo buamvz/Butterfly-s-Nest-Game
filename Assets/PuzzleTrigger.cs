@@ -15,6 +15,7 @@ public class PuzzleTrigger : MonoBehaviour
         if (puzzleManager != null)
         {
             puzzleManager.OpenPuzzle();
+            gameObject.SetActive(false);
         }
         else
         {
