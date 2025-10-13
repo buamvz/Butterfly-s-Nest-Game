@@ -8,6 +8,7 @@ TagManager:
   - GoForward
   - GoRight
   - GoLeft
+  - Bug
   layers:
   - Default
   - TransparentFX

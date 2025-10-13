@@ -6,9 +6,8 @@ public class PuzzleTrigger : MonoBehaviour
 
     void Start()
     {
-        //fiund puzzlemanager object idk why the helly its crossed out??
+        //finding puzzle managaer
         puzzleManager = FindObjectOfType<PuzzleManager>();
-
     }
 
     private void OnMouseDown()
@@ -19,7 +18,7 @@ public class PuzzleTrigger : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("puzzlemanager not found");
+            Debug.LogWarning("PuzzleManager not found in scene!");
         }
     }
 }
