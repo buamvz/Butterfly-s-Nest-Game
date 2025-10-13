@@ -1,18 +1,16 @@
-using System.Collections.Generic;
-using UnityEditor.Search;
 using UnityEngine;
+using System;
 
 public class PuzzleAreaChecker : MonoBehaviour
 {
-    private List<GameObject> bugsInArea = new List<GameObject>();
-    public GameObject[] itemsToActivate; // teh items Hand, Gold, Flower
-    private bool puzzleCleared = false;
+    private int bugsInArea = 0;
+    public static event Action OnWebCleared; 
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Bug") && !bugsInArea.Contains(other.gameObject))
+        if (other.CompareTag("Bug"))
         {
-            bugsInArea.Add(other.gameObject);
+            bugsInArea++;
         }
     }
 
@@ -20,26 +18,13 @@ public class PuzzleAreaChecker : MonoBehaviour
     {
         if (other.CompareTag("Bug"))
         {
-            bugsInArea.Remove(other.gameObject);
+            bugsInArea--;
 
-            if (bugsInArea.Count == 0 && !puzzleCleared)
+            if (bugsInArea <= 0)
             {
-                puzzleCleared = true;
-                EnableItemSelection();
-            }
-        }
-    }
-
-    private void EnableItemSelection()
-    {
-        Debug.Log("all bug removed, now can choose an items");
-        foreach (GameObject item in itemsToActivate)
-        {
-            if (item != null)
-            {
-                ItemSelector selector = item.GetComponent<ItemSelector>();
-                if (selector != null)
-                    selector.SetSelectable(true);
+                bugsInArea = 0;
+                Debug.Log("web is all cleared");
+                OnWebCleared?.Invoke();
             }
         }
     }

@@ -3,8 +3,8 @@ using UnityEngine;
 public class Prize : MonoBehaviour
 {
     [Header("Prize score")]
-    [Tooltip("0 = Bad, 1 = Normal, 2 = Good")]
-    public int score; // set this in the Inspector
+    [Tooltip("0 = bad, 1 = normal, 2 = good")]
+    public int score = 0; // 0 = bad, 1 = normal, 2 = good
 
     public string prizeName;
 
