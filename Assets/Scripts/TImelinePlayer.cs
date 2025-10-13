@@ -1,8 +1,10 @@
+using NUnit.Framework;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class TImelinePlayer : MonoBehaviour
+public class TimelinePlayer : MonoBehaviour
 {
 
     [SerializeField] Dialogue dialogueScript;
@@ -10,7 +12,8 @@ public class TImelinePlayer : MonoBehaviour
     [SerializeField] BoxCollider2D colliderInteraction;
     [SerializeField] PlayableDirector timelineDirector;
 
-    [SerializeField] GameObject interactable;
+    //[SerializeField] GameObject interactable;
+    [SerializeField] List<BoxCollider2D> collidersToDisable;
     [SerializeField] GameObject spiderObject;
 
     [SerializeField] Animator animator;
@@ -46,9 +49,17 @@ public class TImelinePlayer : MonoBehaviour
         spiderObject.SetActive(true);
 
         timelineDirector.Play();
+
+        //interactable.SetActive(false);
+        foreach (BoxCollider2D collider in collidersToDisable)
+        {
+            if(collider != null)
+                collider.enabled = false;
+        }
+
+
         yield return new WaitForSeconds(3.25f);
         Debug.Log("spider");
-        interactable.SetActive(false);
         animator.SetTrigger("Active");
         
     }

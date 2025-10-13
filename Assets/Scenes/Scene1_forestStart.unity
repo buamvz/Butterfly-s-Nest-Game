@@ -355,8 +355,9 @@ GameObject:
   m_Component:
   - component: {fileID: 313233791}
   - component: {fileID: 313233790}
+  - component: {fileID: 313233792}
   m_Layer: 0
-  m_Name: Timeline
+  m_Name: Timeline-SpiderEnters
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -381,6 +382,8 @@ PlayableDirector:
     value: {fileID: 1180376023}
   - key: {fileID: 3490230352204151798, guid: fedf251174a90fd4885591e5e65a6401, type: 2}
     value: {fileID: 1716320046}
+  - key: {fileID: -1416762975861093340, guid: fedf251174a90fd4885591e5e65a6401, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &313233791
@@ -398,6 +401,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &313233792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313233789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084e19cb4d3361b4da7f34711ca55017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueScript: {fileID: 361508334}
+  colliderInteraction: {fileID: 891601537}
+  timelineDirector: {fileID: 313233790}
+  collidersToDisable:
+  - {fileID: 832110388}
+  - {fileID: 2045831893}
+  - {fileID: 1448516551}
+  - {fileID: 891601537}
+  spiderObject: {fileID: 1180376022}
+  animator: {fileID: 1180376023}
 --- !u!1 &316682408
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +721,17 @@ MonoBehaviour:
   _effectXaxis: 1
   _effectYaxis: 1
   _inverse: 1
+--- !u!114 &488685465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2190593244809860481, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+  m_PrefabInstance: {fileID: 4618269226195784086}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 277ff546d152a9c418e05d2a9e77c80b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &582073149
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &582073150
 Transform:
   m_ObjectHideFlags: 0
@@ -1312,6 +1348,7 @@ GameObject:
   - component: {fileID: 832110390}
   - component: {fileID: 832110388}
   - component: {fileID: 832110391}
+  - component: {fileID: 832110392}
   m_Layer: 0
   m_Name: Sign
   m_TagString: Interactable
@@ -1396,6 +1433,22 @@ MonoBehaviour:
   colliderInteraction: {fileID: 832110388}
   dialogueStartLine: 0
   dialogueEndLine: 1
+--- !u!114 &832110392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 832110387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderToToggle: {fileID: 891601537}
+  dialogueScript: {fileID: 361508334}
+  triggerLine: 1
+  lineTime: 3
 --- !u!1 &870890327
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,7 +1546,6 @@ GameObject:
   m_Component:
   - component: {fileID: 891601536}
   - component: {fileID: 891601537}
-  - component: {fileID: 891601538}
   m_Layer: 0
   m_Name: Forward
   m_TagString: GoForward
@@ -1562,24 +1614,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.1629457, y: 1.8025385}
   m_EdgeRadius: 0
---- !u!114 &891601538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 891601535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 084e19cb4d3361b4da7f34711ca55017, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueScript: {fileID: 361508334}
-  colliderInteraction: {fileID: 891601537}
-  timelineDirector: {fileID: 313233790}
-  interactable: {fileID: 1635696769}
-  spiderObject: {fileID: 1180376022}
-  animator: {fileID: 1180376023}
 --- !u!1 &894848686
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,9 +2643,11 @@ GameObject:
   - component: {fileID: 1180376025}
   - component: {fileID: 1180376024}
   - component: {fileID: 1180376023}
-  - component: {fileID: 1180376026}
   - component: {fileID: 1180376028}
+  - component: {fileID: 1180376026}
   - component: {fileID: 1180376027}
+  - component: {fileID: 1180376029}
+  - component: {fileID: 1180376030}
   m_Layer: 0
   m_Name: Spider
   m_TagString: Interactable
@@ -2791,6 +2827,38 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.05, y: 4.06}
   m_EdgeRadius: 0
+--- !u!114 &1180376029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180376022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f8fbf73d3bccb45acb7afe53b8d8d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueScript: {fileID: 1535319189}
+  forwardCollider: {fileID: 582073151}
+  sceneScript: {fileID: 488685465}
+  camAnimation: {fileID: 1716320046}
+--- !u!114 &1180376030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180376022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colliderToToggle: {fileID: 582073151}
+  dialogueScript: {fileID: 1535319189}
+  triggerLine: 1
+  lineTime: 2
 --- !u!1 &1230494784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3034,7 +3102,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 150
+  m_SortingOrder: 101
   m_Sprite: {fileID: -577436947000661451, guid: f015ca9a63b41804fb895df514f7caf2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3127,6 +3195,16 @@ PrefabInstance:
     - target: {fileID: 142482257247175891, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 981559389126998772, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1716320043}
+    - target: {fileID: 3609402699483564443, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: m_text
+      value: '
+
+        Blah Blah (Spider)'
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: index
@@ -3906,7 +3984,7 @@ Animator:
   m_GameObject: {fileID: 1716320041}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a02dfee2ad199b489b29594b3b89d06, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4756,6 +4834,71 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &4618269226195784086
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2190593244809860481, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: scene
+      value: Scene2_BigSpider
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127903391641070813, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127903391641070813, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127903391641070813, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127903391641070813, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127903391641070813, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127903391641070813, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127903391641070813, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127903391641070813, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127903391641070813, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4127903391641070813, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691218068686640435, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_Name
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 6691218068686640435, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
 --- !u!1001 &8610778308951702739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4854,6 +4997,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 4618269226195784086}
   - {fileID: 1716320044}
   - {fileID: 313233791}
   - {fileID: 2068598957}

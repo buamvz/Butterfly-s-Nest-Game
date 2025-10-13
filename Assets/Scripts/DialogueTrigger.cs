@@ -8,7 +8,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField] int dialogueStartLine;
     [SerializeField] int dialogueEndLine; 
     
-   
+
     void Update()
     {
         if (dialogueScript.waiting == true)

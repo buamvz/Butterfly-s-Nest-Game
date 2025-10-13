@@ -21,7 +21,7 @@ public class Dialogue : MonoBehaviour
     private int charIndex;
     public float writingSpeed;
 
-    private bool started;
+    public bool started;
     public bool waitForNext;
 
     public bool waiting;
@@ -71,13 +71,13 @@ public class Dialogue : MonoBehaviour
 
     public void EndDialogue()
     {
-        charIndex = 0;
-        ToggleWindow(false);
-
-
         waiting = false;
         started = false;
         waitForNext = false;
+
+        StopAllCoroutines();
+
+        ToggleWindow(false);
     }
 
 

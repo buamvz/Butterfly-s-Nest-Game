@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -5,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class SwitchScenes : MonoBehaviour
 {
     public static SwitchScenes instance;
+
+    //for crossfade animation
+    [SerializeField] Animator transition;
+    private float transitionTime = 1f;
 
     //private void Start()
     //{
@@ -21,12 +26,16 @@ public class SwitchScenes : MonoBehaviour
     public void LoadScene1()
     {
         Debug.Log("Loading Scene 1");
+
+        StartCoroutine(FadeOut());
         SceneManager.LoadScene("Scene 1_forest Start");
     }
 
     public void LoadScene2()
     {
         Debug.Log("Loading Scene 2");
+        
+        StartCoroutine(FadeOut());
         SceneManager.LoadScene("Scene 2");
     }
 
@@ -35,6 +44,15 @@ public class SwitchScenes : MonoBehaviour
         Debug.Log("Loading Settings");
         SceneManager.LoadScene("Settings");
     }
+
+    //crossfade player
+    IEnumerator FadeOut()
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+
+    }
+
 
     public void BackButtom()
     {

@@ -60,7 +60,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!114 &1133085470236104720
 MonoBehaviour:
@@ -157,7 +157,9 @@ MonoBehaviour:
   - I wonder if they could evolve to eat the mushrooms...
   indexStart: 0
   indexEnd: 0
+  index: 0
   writingSpeed: 0.05
+  started: 0
   waitForNext: 0
   waiting: 0
 --- !u!1 &6745757807052728711
