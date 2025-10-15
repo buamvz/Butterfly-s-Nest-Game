@@ -33,7 +33,6 @@ public class Cursor : MonoBehaviour
         {
             if (hit.collider.CompareTag("Interactable"))
             {
-                Debug.Log("......hover");
                 mouseHover = true;
             }
 

@@ -7,6 +7,8 @@ public class PuzzleAreaChecker : MonoBehaviour
     private int bugsInArea = 0;
     public static event Action OnWebCleared;
 
+    public bool webCleared;
+
     //to turn on and off the prize colliders
     [SerializeField] List<PolygonCollider2D> collidersToDisable;
 
@@ -45,6 +47,8 @@ public class PuzzleAreaChecker : MonoBehaviour
                 Debug.Log("web is all cleared");
                 ToggleColliders(true);
                 OnWebCleared?.Invoke();
+
+                webCleared = true;
             }
         }
     }
