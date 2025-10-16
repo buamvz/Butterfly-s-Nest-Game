@@ -11,8 +11,8 @@ public class DialogueToggle : MonoBehaviour
     [SerializeField] private int triggerLine;
     [SerializeField] private float lineTime;
 
-    public bool currentState;
-    public bool endState;
+    [SerializeField] private bool currentState;
+    [SerializeField] bool endState;
 
     public void ToggleActive(bool show)
     {
