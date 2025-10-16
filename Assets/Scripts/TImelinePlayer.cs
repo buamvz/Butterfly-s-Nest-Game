@@ -35,6 +35,7 @@ public class TimelinePlayer : MonoBehaviour
 
             if (hit.collider != null && hit.collider == colliderInteraction)
             {
+
                 StartCoroutine(PlayTimeline());
             }   
             else
@@ -46,17 +47,16 @@ public class TimelinePlayer : MonoBehaviour
 
     IEnumerator PlayTimeline()
     {
-        spiderObject.SetActive(true);
-
-        timelineDirector.Play();
-
         //interactable.SetActive(false);
         foreach (BoxCollider2D collider in collidersToDisable)
         {
-            if(collider != null)
+            if (collider != null)
                 collider.enabled = false;
+            Debug.Log("collider close");
         }
+        spiderObject.SetActive(true);
 
+        timelineDirector.Play();
 
         yield return new WaitForSeconds(3.25f);
         Debug.Log("spider");

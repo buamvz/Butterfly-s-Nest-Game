@@ -1448,7 +1448,9 @@ MonoBehaviour:
   colliderToToggle: {fileID: 891601537}
   dialogueScript: {fileID: 361508334}
   triggerLine: 1
-  lineTime: 3
+  lineTime: 2
+  currentState: 0
+  endState: 1
 --- !u!1 &870890327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2859,6 +2861,8 @@ MonoBehaviour:
   dialogueScript: {fileID: 1535319189}
   triggerLine: 1
   lineTime: 2
+  currentState: 0
+  endState: 1
 --- !u!1 &1230494784
 GameObject:
   m_ObjectHideFlags: 0
