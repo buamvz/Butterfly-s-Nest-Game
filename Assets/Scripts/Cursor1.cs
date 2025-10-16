@@ -48,6 +48,8 @@ public class Cursor1 : MonoBehaviour
             {
                 spriteRenderer.sprite = cursorRight;
             }
+            else if(Input.GetMouseButtonUp(0)) //HELP AH 16/109
+                spriteRenderer.sprite = cursorDefault;
 
             //click sprite
             if (hit.collider.CompareTag("Bug") && Input.GetMouseButton(0))

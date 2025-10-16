@@ -11,32 +11,36 @@ public class DialogueToggle : MonoBehaviour
     [SerializeField] private int triggerLine;
     [SerializeField] private float lineTime;
 
-    private bool objectOn;
+    [SerializeField] private bool currentState;
+    [SerializeField] bool endState;
 
     public void ToggleActive(bool show)
     {
         colliderToToggle.enabled = show;
-        objectOn = show;
+        currentState = show;
     }
-    IEnumerator ShowThing()
+    IEnumerator Toggle()
     {
+        currentState = !currentState;
+        Debug.Log("swap visibility");
         yield return new WaitForSeconds(lineTime);
-        ToggleActive(true);
+        ToggleActive(currentState);
     }
 
     private void Awake()
     {
-        ToggleActive(false);
+        ToggleActive(currentState);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (!objectOn && dialogueScript.index == triggerLine)
+        if (currentState != endState && dialogueScript.index == triggerLine)
         {
-            StartCoroutine(ShowThing());
+            StartCoroutine(Toggle());
         }
+
 
     }
 }
