@@ -1,14 +1,27 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PrizeClick : MonoBehaviour
 {
-    private bool isClickable = false;
-    private bool alreadyPicked = false;
+    [SerializeField] Prize prizeScript;
+    [SerializeField] PuzzleAreaChecker puzzleScript;
+
+    [Header("Dialogue for choosing Prize")]
+    [SerializeField] Dialogue dialogueScript;
+    [SerializeField] private int dialogueStartLine;
+    [SerializeField] private int dialogueEndLine;
+
+
+    public bool isClickable = false;
+    public bool alreadyInspected = false;
     private Prize prize;
 
     private SpriteRenderer spriteRenderer;
     private static bool itemChosen = false; // ensures player can only pick one item
+
+
+    public bool choosingItem;
 
     void Start()
     {
@@ -16,6 +29,8 @@ public class PrizeClick : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         PuzzleAreaChecker.OnWebCleared += EnableClicking;
     }
+
+
 
     void OnDestroy()
     {
@@ -27,32 +42,36 @@ public class PrizeClick : MonoBehaviour
         isClickable = true;
     }
 
-    void OnMouseEnter()
+    void SelectItem()
     {
-        if (isClickable && !itemChosen)
-            spriteRenderer.material.SetFloat("_OutlineWidth", 2f); 
-    }
+        choosingItem = true;
 
-    void OnMouseExit()
-    {
-        if (isClickable)
-            spriteRenderer.material.SetFloat("_OutlineWidth", 0f);
+        dialogueScript.indexStart = 9;
+        dialogueScript.indexEnd = 9;
+        dialogueScript.StartDialogue();
     }
 
     void OnMouseDown()
     {
-        if (!isClickable || itemChosen || alreadyPicked)
+        if (!isClickable || itemChosen || alreadyInspected)
             return;
 
-        alreadyPicked = true;
-        itemChosen = true;
+        if (isClickable && !dialogueScript.waiting)
+        {
+            alreadyInspected = true;
+        }
+        
+        //struggle is here
+        if (isClickable && !prizeScript.selectPrize && !dialogueScript.waiting && puzzleScript.allItemsInspected && !choosingItem)
+        {
+            SelectItem();
+        }
+        else
+            return;
 
-        Debug.Log($"{gameObject.name} selected, players score: {prize.score}");
 
-        //add score into calc
-        PointCalculator.Instance.AddScore(prize.score);
-
-        ClosePuzzle();
+        if (choosingItem)
+            StartCoroutine(ChooseItem());
     }
 
     void ClosePuzzle()
@@ -60,5 +79,23 @@ public class PrizeClick : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.UnloadSceneAsync("Puzzle1_Web");
         Debug.Log("puzzle closed, Scene2 reactivated.");
+    }
+
+    IEnumerator ChooseItem()
+    {
+        PointCalculator.Instance.AddScore(prize.score);
+        itemChosen = true;
+
+        dialogueScript.indexStart = dialogueStartLine;
+        dialogueScript.indexEnd = dialogueEndLine;
+        dialogueScript.StartDialogue();
+
+        while (dialogueScript.waiting)
+        {
+            yield return new WaitForSeconds(1);
+        }
+        yield return new WaitForSeconds(1);
+        ClosePuzzle();
+
     }
 }

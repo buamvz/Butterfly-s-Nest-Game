@@ -364,6 +364,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afdab914352dcf74e8609faf9986eb1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prizeScript: {fileID: 135395041}
+  puzzleScript: {fileID: 1348391844}
+  dialogueScript: {fileID: 201852946}
+  dialogueStartLine: 7
+  dialogueEndLine: 7
+  isClickable: 0
+  alreadyInspected: 0
+  choosingItem: 0
 --- !u!114 &135395041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,6 +392,7 @@ MonoBehaviour:
   hoverSprite: {fileID: 9143704816120331038, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   holdSprite: {fileID: -1831484454515672926, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   polygonCollider: {fileID: 135395042}
+  selectPrize: 0
   dialogueScript: {fileID: 201852946}
   dialogueStartLine: 2
   dialogueEndLine: 3
@@ -2461,6 +2470,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afdab914352dcf74e8609faf9986eb1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prizeScript: {fileID: 1027200597}
+  puzzleScript: {fileID: 1348391844}
+  dialogueScript: {fileID: 201852946}
+  dialogueStartLine: 6
+  dialogueEndLine: 6
+  isClickable: 0
+  alreadyInspected: 0
+  choosingItem: 0
 --- !u!114 &1027200597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2481,6 +2498,7 @@ MonoBehaviour:
   hoverSprite: {fileID: 836212261557002003, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   holdSprite: {fileID: 5995183257624138762, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   polygonCollider: {fileID: 1027200595}
+  selectPrize: 0
   dialogueScript: {fileID: 201852946}
   dialogueStartLine: 0
   dialogueEndLine: 1
@@ -3647,7 +3665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: dialogues.Array.size
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[0]'
@@ -3672,6 +3690,22 @@ PrefabInstance:
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[5]'
       value: Well, who wouldn't like money?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[6]'
+      value: Guess I'm taking the hand.....
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[7]'
+      value: Perfect!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[8]'
+      value: I'll take this then.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[9]'
+      value: Hm... which item should i take?
       objectReference: {fileID: 0}
     - target: {fileID: 6225780038206617434, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: m_Name
@@ -3786,6 +3820,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63256d6f81cac94a98ec29e2e640357, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allItemsInspected: 0
+  handClick: {fileID: 1027200596}
+  flowerClick: {fileID: 135395040}
+  goldClick: {fileID: 1430597279}
+  dialogue: {fileID: 201852946}
   webCleared: 0
   collidersToDisable:
   - {fileID: 1027200595}
@@ -4001,6 +4040,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afdab914352dcf74e8609faf9986eb1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prizeScript: {fileID: 1430597280}
+  puzzleScript: {fileID: 1348391844}
+  dialogueScript: {fileID: 201852946}
+  dialogueStartLine: 8
+  dialogueEndLine: 8
+  isClickable: 0
+  alreadyInspected: 0
+  choosingItem: 0
 --- !u!114 &1430597280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4021,6 +4068,7 @@ MonoBehaviour:
   hoverSprite: {fileID: 6431532348433149009, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   holdSprite: {fileID: 1763496370880569857, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   polygonCollider: {fileID: 1430597281}
+  selectPrize: 0
   dialogueScript: {fileID: 201852946}
   dialogueStartLine: 4
   dialogueEndLine: 5
