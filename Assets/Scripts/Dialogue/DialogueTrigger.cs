@@ -5,8 +5,8 @@ public class DialogueTrigger : MonoBehaviour
     public Dialogue dialogueScript;
 
     [SerializeField] BoxCollider2D colliderInteraction;
-    [SerializeField] int dialogueStartLine;
-    [SerializeField] int dialogueEndLine; 
+    [SerializeField] public int dialogueStartLine;
+    [SerializeField] public int dialogueEndLine; 
     
 
     void Update()

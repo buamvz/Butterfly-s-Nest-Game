@@ -1450,12 +1450,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliderToToggle: {fileID: 891601537}
+  collidersToDisable:
+  - {fileID: 891601537}
   dialogueScript: {fileID: 361508334}
+  triggerScript: {fileID: 832110391}
   triggerLine: 1
   lineTime: 2
   currentState: 0
   endState: 1
+  changeOnce: 1
 --- !u!1 &870890327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2862,12 +2865,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colliderToToggle: {fileID: 582073151}
+  collidersToDisable:
+  - {fileID: 582073151}
   dialogueScript: {fileID: 1535319189}
+  triggerScript: {fileID: 1180376027}
   triggerLine: 1
   lineTime: 2
   currentState: 0
   endState: 1
+  changeOnce: 1
 --- !u!1 &1230494784
 GameObject:
   m_ObjectHideFlags: 0
