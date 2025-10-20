@@ -13,7 +13,7 @@ public class InteractionBlocker : MonoBehaviour
         if (hit.collider == blocker)
         {
             return;
-            Debug.Log("Hit blocker");
+            Debug.Log("hit blocker");
 
         }
     }
