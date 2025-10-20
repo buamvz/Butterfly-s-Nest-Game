@@ -3730,6 +3730,7 @@ GameObject:
   - component: {fileID: 1348391845}
   - component: {fileID: 1348391844}
   - component: {fileID: 1348391843}
+  - component: {fileID: 1348391846}
   m_Layer: 0
   m_Name: PuzzleManagerObject
   m_TagString: Untagged
@@ -3845,6 +3846,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1348391846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348391842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec79e10f553af2b4cacf7debdcd73e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSceneName: Scene2_bigSpider
+  puzzleSceneName: Puzzle1_Web
 --- !u!1 &1430597276
 GameObject:
   m_ObjectHideFlags: 0

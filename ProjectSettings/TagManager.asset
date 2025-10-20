@@ -9,6 +9,7 @@ TagManager:
   - GoRight
   - GoLeft
   - Bug
+  - Vine
   layers:
   - Default
   - TransparentFX

@@ -1202,6 +1202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec79e10f553af2b4cacf7debdcd73e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainSceneName: Scene2_bigSpider
+  puzzleSceneName: Puzzle1_Web
 --- !u!4 &1241324603
 Transform:
   m_ObjectHideFlags: 0
