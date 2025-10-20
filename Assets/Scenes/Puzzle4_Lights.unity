@@ -190,6 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 561868578}
   - component: {fileID: 561868577}
+  - component: {fileID: 561868579}
   m_Layer: 0
   m_Name: Light 2D (1)
   m_TagString: Untagged
@@ -213,7 +214,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.626
-  m_Color: {r: 0.83396226, g: 0.7159138, b: 0.50195086, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5025545, b: 0.19896747, a: 1}
   m_Intensity: 4
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -264,6 +265,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1862159812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -91.575}
+--- !u!95 &561868579
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561868576}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0cfcc3b401935a34192cab105690647e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &681064495
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 768112967}
   - component: {fileID: 768112966}
+  - component: {fileID: 768112968}
   m_Layer: 0
   m_Name: Light 2D (5)
   m_TagString: Untagged
@@ -734,7 +758,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.626
-  m_Color: {r: 0.83396226, g: 0.7159138, b: 0.50195086, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5025545, b: 0.19896747, a: 1}
   m_Intensity: 4
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -785,6 +809,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1862159812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 91.685}
+--- !u!95 &768112968
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768112965}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1b1809730d1bb2f4c9b1f3def03926f2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &789452395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,6 +1375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1114324383}
   - component: {fileID: 1114324382}
+  - component: {fileID: 1114324384}
   m_Layer: 0
   m_Name: Light 2D (7)
   m_TagString: Untagged
@@ -1352,7 +1399,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.626
-  m_Color: {r: 0.83396226, g: 0.7159138, b: 0.50195086, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5025545, b: 0.19896747, a: 1}
   m_Intensity: 4
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -1403,6 +1450,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1862159812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 91.685}
+--- !u!95 &1114324384
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114324381}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 91b43d4acfd373a4ba2eaf52cfc316c5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1239427632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,6 +1632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1326527960}
   - component: {fileID: 1326527959}
+  - component: {fileID: 1326527961}
   m_Layer: 0
   m_Name: Light 2D (2)
   m_TagString: Untagged
@@ -1586,7 +1656,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.626
-  m_Color: {r: 0.83396226, g: 0.7159138, b: 0.50195086, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5025545, b: 0.19896747, a: 1}
   m_Intensity: 4
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -1637,6 +1707,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1862159812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -91.575}
+--- !u!95 &1326527961
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326527958}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b8ed77db3b17310458ba817f3a2acfba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1437741960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2070,6 +2162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1735854098}
   - component: {fileID: 1735854097}
+  - component: {fileID: 1735854099}
   m_Layer: 0
   m_Name: Light 2D (8)
   m_TagString: Untagged
@@ -2093,7 +2186,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.626
-  m_Color: {r: 0.83396226, g: 0.7159138, b: 0.50195086, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5025545, b: 0.19896747, a: 1}
   m_Intensity: 4
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -2144,6 +2237,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1862159812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 95.638}
+--- !u!95 &1735854099
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735854096}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 27c11db48f263a346b620bf53ccbe2bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1765580664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,6 +2269,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1765580666}
   - component: {fileID: 1765580665}
+  - component: {fileID: 1765580667}
   m_Layer: 0
   m_Name: Light 2D (3)
   m_TagString: Untagged
@@ -2177,7 +2293,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.626
-  m_Color: {r: 0.83396226, g: 0.7159138, b: 0.50195086, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5025545, b: 0.19896747, a: 1}
   m_Intensity: 4
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -2228,6 +2344,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1862159812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -91.575}
+--- !u!95 &1765580667
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765580664}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e6150fef0304d0f47af5f98df71aad19, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1862159811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,6 +2496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1915388967}
   - component: {fileID: 1915388966}
+  - component: {fileID: 1915388968}
   m_Layer: 0
   m_Name: Light 2D (6)
   m_TagString: Untagged
@@ -2381,7 +2520,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.626
-  m_Color: {r: 0.83396226, g: 0.7159138, b: 0.50195086, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5025545, b: 0.19896747, a: 1}
   m_Intensity: 4
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -2432,6 +2571,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1862159812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 91.685}
+--- !u!95 &1915388968
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915388965}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 98cbba23984004e409aec9b2a91a7dd4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1923138404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,6 +2603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1923138406}
   - component: {fileID: 1923138405}
+  - component: {fileID: 1923138407}
   m_Layer: 0
   m_Name: Light 2D (4)
   m_TagString: Untagged
@@ -2465,7 +2627,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.626
-  m_Color: {r: 0.83396226, g: 0.7159138, b: 0.50195086, a: 1}
+  m_Color: {r: 0.9169811, g: 0.5025545, b: 0.19896747, a: 1}
   m_Intensity: 4
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -2516,6 +2678,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1862159812}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -91.575}
+--- !u!95 &1923138407
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923138404}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 89eb7ade14855c546b7c7e274c93cbb5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

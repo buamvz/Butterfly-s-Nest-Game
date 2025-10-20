@@ -5,11 +5,9 @@ using UnityEngine.SceneManagement;
 public class PuzzleManager : MonoBehaviour
 {
     [Header("Puzzle and Scene set up)")]
-    [Tooltip("Scene")]
-    [SerializeField] private string mainSceneName;
+    [SerializeField] private string mainSceneName; //scene
 
-    [Tooltip("Puzzle")]
-    [SerializeField] private string puzzleSceneName;
+    [SerializeField] private string puzzleSceneName; //puzzle
 
     private Scene puzzleScene;
     private MouseParallax[] parallaxScripts;
