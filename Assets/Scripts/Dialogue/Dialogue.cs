@@ -71,6 +71,7 @@ public class Dialogue : MonoBehaviour
 
     public void EndDialogue()
     {
+
         waiting = false;
         started = false;
         waitForNext = false;
@@ -137,6 +138,8 @@ public class Dialogue : MonoBehaviour
                 }
                 else
                 {
+
+                    index--;
                     EndDialogue();
                 }
             }
