@@ -1,11 +1,21 @@
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PuzzleAreaChecker : MonoBehaviour
 {
     private int bugsInArea = 0;
     public static event Action OnWebCleared;
+
+    public bool allItemsInspected;
+    //public static event Action AllItemsInspected;
+
+    [SerializeField] PrizeClick handClick;
+    [SerializeField] PrizeClick flowerClick;
+    [SerializeField] PrizeClick goldClick;
+
+    [SerializeField] Dialogue dialogue;
 
     public bool webCleared;
 
@@ -51,5 +61,17 @@ public class PuzzleAreaChecker : MonoBehaviour
                 webCleared = true;
             }
         }
+    }
+
+    void Update()
+    {
+        if (!allItemsInspected && handClick.alreadyInspected && flowerClick.alreadyInspected && goldClick.alreadyInspected)
+        {
+            Debug.Log("all items inspected");
+            allItemsInspected = true;
+            //AllItemsInspected?.Invoke(); 
+        }
+        else
+            return;
     }
 }

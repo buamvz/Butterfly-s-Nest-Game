@@ -28,7 +28,7 @@ public class Prize : MonoBehaviour
 
 
     private bool mouseHover;
-    private bool selectPrize;
+    public bool selectPrize;
 
     private void Start()
     {
@@ -89,7 +89,6 @@ public class Prize : MonoBehaviour
     {
         spriteRenderer.sprite = holdSprite;
         selectPrize = false;
-        Debug.Log("prize will start" + score);
 
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(cursorPos, Vector2.zero);
