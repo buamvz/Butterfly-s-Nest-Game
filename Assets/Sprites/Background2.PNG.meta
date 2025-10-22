@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 1c26017dd224270468fe032be799082a
+guid: 802e903c81d765a4c999307a355535df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -406496011657995516
-    second: Vines_0
-  - first:
-      213: 7295689168946027194
-    second: Vines_1
-  - first:
-      213: 7324600648951913920
-    second: Vines_2
-  - first:
-      213: -2703658641051211970
-    second: Vines_3
+      213: -2314643139911491842
+    second: IMG_9927_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,89 +100,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Vines_0
+      name: Background2_0
       rect:
         serializedVersion: 2
-        x: 136
-        y: 737
-        width: 286
-        height: 268
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40b1386f706db5af0800000000000000
-      internalID: -406496011657995516
+      spriteID: efed7c7e35cb0efd0800000000000000
+      internalID: -2314643139911491842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vines_1
+      name: Background2_1
       rect:
         serializedVersion: 2
-        x: 533
-        y: 19
-        width: 216
-        height: 1025
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 1920
+        height: 201
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: aba51ba15ae7f3560800000000000000
-      internalID: 7295689168946027194
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vines_2
-      rect:
-        serializedVersion: 2
-        x: 921
-        y: 39
-        width: 826
-        height: 992
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0cddf5a9b7536a560800000000000000
-      internalID: 7324600648951913920
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vines_3
-      rect:
-        serializedVersion: 2
-        x: 121
-        y: 53
-        width: 221
-        height: 463
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e372a326accaa7ad0800000000000000
-      internalID: -2703658641051211970
+      spriteID: c748ef0fcc385bf498af0ea17d51596e
+      internalID: -711022302
       vertices: []
       indices: 
       edges: []
@@ -200,7 +147,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2aa912a51f567044293d513fea3960ee
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +157,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Vines_0: -406496011657995516
-      Vines_1: 7295689168946027194
-      Vines_2: 7324600648951913920
-      Vines_3: -2703658641051211970
+      Background2_0: -2314643139911491842
+      Background2_1: -711022302
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
