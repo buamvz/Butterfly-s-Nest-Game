@@ -53,7 +53,7 @@ public class PrizeClick : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (!isClickable || itemChosen || alreadyInspected)
+        if (!isClickable) //|| itemChosen || alreadyInspected
             return;
 
         if (isClickable && !dialogueScript.waiting)
@@ -62,9 +62,10 @@ public class PrizeClick : MonoBehaviour
         }
         
         //struggle is here
-        if (isClickable && !prizeScript.selectPrize && !dialogueScript.waiting && puzzleScript.allItemsInspected && !choosingItem)
+        if (!prizeScript.selectPrize && !dialogueScript.waiting && puzzleScript.allItemsInspected && !choosingItem)
         {
             SelectItem();
+            Debug.Log("select item");
         }
         else
             return;
@@ -95,7 +96,7 @@ public class PrizeClick : MonoBehaviour
             yield return new WaitForSeconds(1);
         }
         yield return new WaitForSeconds(1);
-        ClosePuzzle();
+        //ClosePuzzle();
 
     }
 }
