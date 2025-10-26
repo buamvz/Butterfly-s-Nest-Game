@@ -51,5 +51,15 @@ public class PuzzleManager : MonoBehaviour
         Debug.Log($"unloading puzzle scene '{puzzleSceneName}'...");
 
         SceneManager.UnloadSceneAsync(puzzleSceneName);
+
+        //for starting second lot of conversation
+        SecondSequence();
+    }
+
+    [SerializeField] BoxCollider2D convo2Collider;
+
+    public void SecondSequence()
+    {
+        convo2Collider.enabled = true;
     }
 }

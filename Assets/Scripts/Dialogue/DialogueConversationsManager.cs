@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class DialogueConversationsManager : MonoBehaviour
 {
@@ -73,5 +74,22 @@ public class DialogueConversationsManager : MonoBehaviour
 
         waitingForNext = false;
     }
+
+    public bool IsDialogueActive
+    {
+        get
+        {
+            if(!conversationActive || currentStep >= steps.Count)
+                return false;
+            return steps[currentStep].speaker.started;
+        }
+    }
+
+    //public void StartDialogueRange(Dialogue speaker, int start, int end)
+    //{
+    //    speaker.indexStart = start;
+    //    speaker.indexEnd = end;
+    //    speaker.StartDialogue();
+    //}
 
 }

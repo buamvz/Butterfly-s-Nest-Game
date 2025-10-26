@@ -62,17 +62,17 @@ public class PrizeClick : MonoBehaviour
         }
         
         //struggle is here
-        if (!prizeScript.selectPrize && !dialogueScript.waiting && puzzleScript.allItemsInspected && !choosingItem)
-        {
-            SelectItem();
-            Debug.Log("select item");
-        }
-        else
-            return;
+        //if (!prizeScript.selectPrize && !dialogueScript.waiting && puzzleScript.allItemsInspected && !choosingItem)
+        //{
+        //    SelectItem();
+        //    Debug.Log("select an item");
+        //}
+        //else
+        //    return;
 
 
-        if (choosingItem)
-            StartCoroutine(ChooseItem());
+        //if (choosingItem)
+        //    StartCoroutine(ChooseItem());
     }
 
     void ClosePuzzle()
@@ -82,21 +82,21 @@ public class PrizeClick : MonoBehaviour
         Debug.Log("puzzle closed, Scene2 reactivated.");
     }
 
-    IEnumerator ChooseItem()
-    {
-        PointCalculator.Instance.AddScore(prize.score);
-        itemChosen = true;
+    //IEnumerator ChooseItem()
+    //{
+    //    PointCalculator.Instance.AddScore(prize.score);
+    //    itemChosen = true;
 
-        dialogueScript.indexStart = dialogueStartLine;
-        dialogueScript.indexEnd = dialogueEndLine;
-        dialogueScript.StartDialogue();
+    //    dialogueScript.indexStart = dialogueStartLine;
+    //    dialogueScript.indexEnd = dialogueEndLine;
+    //    dialogueScript.StartDialogue();
 
-        while (dialogueScript.waiting)
-        {
-            yield return new WaitForSeconds(1);
-        }
-        yield return new WaitForSeconds(1);
-        //ClosePuzzle();
+    //    while (dialogueScript.waiting)
+    //    {
+    //        yield return new WaitForSeconds(1);
+    //    }
+    //    yield return new WaitForSeconds(1);
+    //    //ClosePuzzle();
 
-    }
+    //}
 }

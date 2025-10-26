@@ -148,6 +148,13 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    public bool IsDialogueActive => started;
+    public void StartDialogueRange(int start, int end)
+    {
+        indexStart = start;
+        indexEnd = end;
+        StartDialogue();
+    }
 
 
 }
