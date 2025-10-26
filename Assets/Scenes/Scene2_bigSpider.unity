@@ -1184,7 +1184,6 @@ GameObject:
   - component: {fileID: 816137043}
   - component: {fileID: 816137040}
   - component: {fileID: 816137042}
-  - component: {fileID: 816137044}
   m_Layer: 0
   m_Name: ConversationManager-1
   m_TagString: Untagged
@@ -1327,25 +1326,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 16.856884, y: 8.362124}
   m_EdgeRadius: 0
---- !u!114 &816137044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 816137039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collidersToDisable:
-  - {fileID: 816137043}
-  dialogueScript: {fileID: 1426772416}
-  triggerScript: {fileID: 2049758752}
-  triggerLine: 10
-  lineTime: 1
-  changeOnce: 0
 --- !u!224 &870076996 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3817672800279869705, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
@@ -1758,6 +1738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainSceneName: Scene2_bigSpider
   puzzleSceneName: Puzzle1_Web
+  convo2Collider: {fileID: 0}
 --- !u!4 &1241324603
 Transform:
   m_ObjectHideFlags: 0
