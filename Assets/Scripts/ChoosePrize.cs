@@ -5,6 +5,7 @@ public class ChoosePrize : MonoBehaviour
 {
 
     [SerializeField] PuzzleAreaChecker puzzleScript;
+    [SerializeField] PuzzleManager managerScript;
 
     [Header("Dialogue for choosing Prize")]
     [SerializeField] Dialogue dialogueScript;
@@ -34,17 +35,17 @@ public class ChoosePrize : MonoBehaviour
             if (hit.collider != null && hit.collider == goldCollider)
             {
                 Debug.Log("You chose the gold.");
-                ClosePuzzle();
+                managerScript.ClosePuzzle();
             }
             else if (hit.collider != null && hit.collider == flowerCollider)
             {
                 Debug.Log("You chose the flower.");
-                ClosePuzzle();
+                managerScript.ClosePuzzle();
             }
             else if (hit.collider != null && hit.collider == handCollider)
             {
                 Debug.Log("You chose the hand.");
-                ClosePuzzle();
+                managerScript.ClosePuzzle();
             }
             else
                 SelectingItem();
@@ -59,10 +60,10 @@ public class ChoosePrize : MonoBehaviour
         dialogueScript.StartDialogue();
     }
 
-    void ClosePuzzle()
-    {
-        Time.timeScale = 1f;
-        SceneManager.UnloadSceneAsync("Puzzle1_Web");
-        Debug.Log("puzzle closed, Scene2 reactivated.");
-    }
+    //void ClosePuzzle()
+    //{
+    //    Time.timeScale = 1f;
+    //    SceneManager.UnloadSceneAsync("Puzzle1_Web");
+    //    Debug.Log("puzzle closed, Scene2 reactivated.");
+    //}
 }

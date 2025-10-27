@@ -12,6 +12,8 @@ public class PuzzleManager : MonoBehaviour
     private Scene puzzleScene;
     private MouseParallax[] parallaxScripts;
 
+    //forreading when puzzle is closed - sienna
+    public bool puzzleCloses = false;
 
     public void OpenPuzzle()
     {
@@ -47,19 +49,22 @@ public class PuzzleManager : MonoBehaviour
             Debug.LogError("assign puzzle and scene in inspector");
             return;
         }
+        //for starting second lot of conversation
+        Debug.Log("close from puzzlemanager");
+        GlobalEventManager.Instance.PuzzleClosed();
 
         Debug.Log($"unloading puzzle scene '{puzzleSceneName}'...");
 
+
         SceneManager.UnloadSceneAsync(puzzleSceneName);
 
-        //for starting second lot of conversation
-        SecondSequence();
+
     }
 
-    [SerializeField] BoxCollider2D convo2Collider;
+    //[SerializeField] BoxCollider2D convo2Collider;
 
-    public void SecondSequence()
-    {
-        convo2Collider.enabled = true;
-    }
+    //public void SecondSequence()
+    //{
+    //    convo2Collider.enabled = true;
+    //}
 }

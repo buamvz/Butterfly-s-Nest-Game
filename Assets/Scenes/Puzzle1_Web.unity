@@ -3860,6 +3860,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainSceneName: Scene2_bigSpider
   puzzleSceneName: Puzzle1_Web
+  puzzleCloses: 0
 --- !u!1 &1430597276
 GameObject:
   m_ObjectHideFlags: 0
@@ -4674,6 +4675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleScript: {fileID: 1348391844}
+  managerScript: {fileID: 1348391846}
   dialogueScript: {fileID: 201852946}
   dialogueStartLine: 0
   dialogueEndLine: 0

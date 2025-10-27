@@ -11,10 +11,15 @@ public class ExpressionChange : MonoBehaviour
 
     private void Update()
     {
-        if (expressionLine.Contains(dialogueScript.index))
+        if (dialogueScript.index == dialogueScript.dialogues.Count && !dialogueScript.waiting)
+        {
+            anim.SetBool("squint", false);
+        }
+        else if (expressionLine.Contains(dialogueScript.index))
             anim.SetBool("squint", true);
         else
             anim.SetBool("squint", false);
         
+
     }
 }
