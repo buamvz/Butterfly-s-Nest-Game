@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: aa192d681e328924884ae7d10e09f9e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 676372699228225965
+    second: vines 3 1_0
+  - first:
+      213: -7143315473295232793
+    second: vines 3 1_1
+  - first:
+      213: -4149958328522182921
+    second: vines 3 1_2
+  - first:
+      213: -6141535279984354357
+    second: vines 3 1_3
+  - first:
+      213: -7581346588198109904
+    second: vines 3 1_4
+  - first:
+      213: 6494681327690039467
+    second: vines 3 1_5
+  - first:
+      213: 3604310025388568579
+    second: vines 3 1_6
+  - first:
+      213: -4773834644132377194
+    second: vines 3 1_7
+  - first:
+      213: -2363095049557947943
+    second: vines 3 1_8
+  - first:
+      213: -2194750189492262528
+    second: vines 3 1_9
+  - first:
+      213: -7041937728673353990
+    second: vines 3 1_10
+  - first:
+      213: 6926447651511599165
+    second: vines 3 1_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vines 3 1_0
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 712
+        width: 304
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da14549e265f26900800000000000000
+      internalID: 676372699228225965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 761
+        width: 84
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0bfa78c68dddc90800000000000000
+      internalID: -7143315473295232793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_2
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 798
+        width: 144
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fee2cb33e26866c0800000000000000
+      internalID: -4149958328522182921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_3
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 703
+        width: 181
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcbd00db332e4caa0800000000000000
+      internalID: -6141535279984354357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_4
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 456
+        width: 90
+        height: 456
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03df45b1275a9c690800000000000000
+      internalID: -7581346588198109904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 66
+        width: 232
+        height: 452
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0c35ad14eb12a50800000000000000
+      internalID: 6494681327690039467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_6
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 315
+        width: 114
+        height: 202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3003aa32fd4150230800000000000000
+      internalID: 3604310025388568579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_7
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 115
+        width: 310
+        height: 881
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d490c1faeefbdb0800000000000000
+      internalID: -4773834644132377194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_8
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 117
+        width: 81
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d94d989299943fd0800000000000000
+      internalID: -2363095049557947943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_9
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 151
+        width: 252
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089a798b45eaa81e0800000000000000
+      internalID: -2194750189492262528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_10
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 150
+        width: 561
+        height: 764
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afee00012f2064e90800000000000000
+      internalID: -7041937728673353990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vines 3 1_11
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 72
+        width: 53
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3000bfe07faf1060800000000000000
+      internalID: 6926447651511599165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ad25f67ce0bee234ea546ae1928f09ff
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      vines 3 1_0: 676372699228225965
+      vines 3 1_1: -7143315473295232793
+      vines 3 1_10: -7041937728673353990
+      vines 3 1_11: 6926447651511599165
+      vines 3 1_2: -4149958328522182921
+      vines 3 1_3: -6141535279984354357
+      vines 3 1_4: -7581346588198109904
+      vines 3 1_5: 6494681327690039467
+      vines 3 1_6: 3604310025388568579
+      vines 3 1_7: -4773834644132377194
+      vines 3 1_8: -2363095049557947943
+      vines 3 1_9: -2194750189492262528
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
