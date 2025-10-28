@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vine prizes_0: 4457001495586701990
+      vine prizes_1: 4097710484868523861
+      vine prizes_2: 181566155100841238
+      vine prizes_3: -749937499788319092
+      vine prizes_4: 5315063370463740545
+      vine prizes_5: -2175233776693596444
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

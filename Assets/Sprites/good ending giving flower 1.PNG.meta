@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      good ending giving flower 1_0: 2137793714295879117
+      good ending giving flower 1_1: -3478451387871914406
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

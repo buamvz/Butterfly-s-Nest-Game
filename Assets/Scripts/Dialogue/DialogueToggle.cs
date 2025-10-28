@@ -10,10 +10,9 @@ public class DialogueToggle : MonoBehaviour
     [SerializeField] List<BoxCollider2D> collidersToDisable;
 
     [SerializeField] Dialogue dialogueScript;
-    [SerializeField] DialogueTrigger triggerScript;
 
     [SerializeField] private int triggerLine;
-    [SerializeField] private float lineTime;
+    //[SerializeField] private float lineTime;
 
     [SerializeField] private bool changeOnce;
 
@@ -28,28 +27,25 @@ public class DialogueToggle : MonoBehaviour
         foreach (BoxCollider2D collider in collidersToDisable)
         {
             collider.enabled = !collider.enabled;
+            Debug.Log("toggle active");
         }
     }
-    IEnumerator Toggle()
-    {
-        yield return new WaitForSeconds(lineTime);
-        ToggleActive();
+       
+        //realised i can just wait for dialogue.waiting...
+    //IEnumerator Toggle()
+    //{
+    //    yield return new WaitForSeconds(lineTime);
+    //    ToggleActive();
 
-        Debug.Log("swap visibility");
+    //    Debug.Log("swap visibility");
 
-    }
+    //}
 
 
-    // Update is called once per frame
     void Update()
     {
-        //triggerLine = triggerScript.dialogueEndLine;
-
-        //old code for only on/off once
-        //if (currentState != endState && dialogueScript.index == triggerLine)
-        //{
-        //    StartCoroutine(Toggle());
-        //}
+        if (dialogueScript.waiting)
+            return;
 
         if (dialogueScript.index != lastDialogueIndex)
         {
@@ -61,13 +57,15 @@ public class DialogueToggle : MonoBehaviour
                 {
                     if(!hasToggled)
                     {
-                        StartCoroutine(Toggle());
+                        ToggleActive();
+                        //StartCoroutine(Toggle());
                         hasToggled = true;
                     }
                 }
                 else
                 {
-                    StartCoroutine(Toggle());
+                    ToggleActive();
+                    //StartCoroutine(Toggle());
                 }
             }
         }

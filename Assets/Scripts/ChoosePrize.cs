@@ -98,7 +98,7 @@ public class ChoosePrize : MonoBehaviour
 
         yield return new WaitForSeconds(1);
 
-        managerScript.ClosePuzzle();
+        //managerScript.ClosePuzzle();
     }
 
 }
