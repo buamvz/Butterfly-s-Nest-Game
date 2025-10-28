@@ -36,19 +36,19 @@ public class Cursor1 : MonoBehaviour
             {
                 spriteRenderer.sprite = cursorHover;
             }
-            if (hit.collider.CompareTag("GoForward"))
+            else if (hit.collider.CompareTag("GoForward"))
             {
                 spriteRenderer.sprite = cursorForward;
             }
-            if (hit.collider.CompareTag("GoLeft"))
+            else if (hit.collider.CompareTag("GoLeft"))
             {
                 spriteRenderer.sprite = cursorLeft;
             }
-            if (hit.collider.CompareTag("GoRight"))
+            else if (hit.collider.CompareTag("GoRight"))
             {
                 spriteRenderer.sprite = cursorRight;
             }
-            else if(Input.GetMouseButtonUp(0)) //HELP AH 16/109
+            else// if(Input.GetMouseButtonUp(0)) //HELP AH 16/109
                 spriteRenderer.sprite = cursorDefault;
 
             //click sprite

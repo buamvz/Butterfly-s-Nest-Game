@@ -71,14 +71,13 @@ public class Dialogue : MonoBehaviour
 
     public void EndDialogue()
     {
-
         waiting = false;
         started = false;
         waitForNext = false;
 
-        StopAllCoroutines();
-
         ToggleWindow(false);
+
+        StopAllCoroutines();
     }
 
 

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,63 +8,97 @@ public class ChoosePrize : MonoBehaviour
     [SerializeField] PuzzleAreaChecker puzzleScript;
     [SerializeField] PuzzleManager managerScript;
 
-    [Header("Dialogue for choosing Prize")]
+    [Header("Dialogue")]
     [SerializeField] Dialogue dialogueScript;
-    [SerializeField] private int dialogueStartLine;
-    [SerializeField] private int dialogueEndLine;
+
+    [SerializeField] private int dialogueOne;
+    [SerializeField] private int dialogueTwo;
+    [SerializeField] private int dialogueThree;
 
     [Header("Colliders")]
-    [SerializeField] PolygonCollider2D goldCollider;
-    [SerializeField] PolygonCollider2D flowerCollider;
-    [SerializeField] PolygonCollider2D handCollider;
+    [SerializeField] BoxCollider2D colliderOne;
+    [SerializeField] BoxCollider2D colliderTwo;
+    [SerializeField] BoxCollider2D colliderThree;
 
     public bool choosingItem;
+    public bool allItemsInspected;
 
+    [SerializeField] PrizeWeb prizeOne;
+    [SerializeField] PrizeWeb prizeTwo;
+    [SerializeField] PrizeWeb prizeThree;
 
-    // Update is called once per frame
+    [SerializeField] Dialogue dialogue;
+
     void Update()
     {
 
-
-        if (Input.GetMouseButtonDown(0) && puzzleScript.allItemsInspected && !dialogueScript.waiting)
+        if (!allItemsInspected && prizeOne.alreadyInspected && prizeTwo.alreadyInspected && prizeThree.alreadyInspected && !dialogue.waiting)
         {
+            dialogue.EndDialogue();
+
+            StartCoroutine(Wait());
+        }
+        
+        if (allItemsInspected && !dialogue.waiting)
             choosingItem = true;
 
+        if (Input.GetMouseButtonDown(0) && allItemsInspected && !dialogueScript.waiting && choosingItem)
+        {
             Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 
-            if (hit.collider != null && hit.collider == goldCollider)
+            if (hit.collider != null && hit.collider == colliderOne)
             {
                 Debug.Log("You chose the gold.");
-                managerScript.ClosePuzzle();
+                dialogueScript.indexStart = dialogueOne;
+                dialogueScript.indexEnd = dialogueOne;
+                StartCoroutine(CallClosePuzzle());
             }
-            else if (hit.collider != null && hit.collider == flowerCollider)
+            else if (hit.collider != null && hit.collider == colliderTwo)
             {
                 Debug.Log("You chose the flower.");
-                managerScript.ClosePuzzle();
+                dialogueScript.indexStart = dialogueTwo;
+                dialogueScript.indexEnd = dialogueTwo;
+                StartCoroutine(CallClosePuzzle());
             }
-            else if (hit.collider != null && hit.collider == handCollider)
+            else if (hit.collider != null && hit.collider == colliderThree)
             {
                 Debug.Log("You chose the hand.");
-                managerScript.ClosePuzzle();
+                dialogueScript.indexStart = dialogueThree;
+                dialogueScript.indexEnd = dialogueThree;
+                StartCoroutine(CallClosePuzzle());
             }
-            else
-                SelectingItem();
         }
     }
-
 
     void SelectingItem()
     {
         dialogueScript.indexStart = 9;
         dialogueScript.indexEnd = 9;
         dialogueScript.StartDialogue();
+
+
+        allItemsInspected = true;
     }
 
-    //void ClosePuzzle()
-    //{
-    //    Time.timeScale = 1f;
-    //    SceneManager.UnloadSceneAsync("Puzzle1_Web");
-    //    Debug.Log("puzzle closed, Scene2 reactivated.");
-    //}
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1);
+
+        SelectingItem();
+    }
+
+    IEnumerator CallClosePuzzle()
+    {
+        choosingItem = false;
+        dialogueScript.StartDialogue();
+
+        while (dialogue.waiting)
+            yield return null;
+
+        yield return new WaitForSeconds(1);
+
+        managerScript.ClosePuzzle();
+    }
+
 }
