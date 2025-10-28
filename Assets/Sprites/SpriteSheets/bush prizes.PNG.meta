@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 0544d422149c54f4dbba05a20f5777a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9097786782137903553
+    second: bush prizes_0
+  - first:
+      213: -5989548797513739334
+    second: bush prizes_1
+  - first:
+      213: -7256584048644647337
+    second: bush prizes_2
+  - first:
+      213: -8127187459662117210
+    second: bush prizes_3
+  - first:
+      213: -7929908462812186367
+    second: bush prizes_4
+  - first:
+      213: 2242957105459791753
+    second: bush prizes_5
+  - first:
+      213: 3001472363089074814
+    second: bush prizes_6
+  - first:
+      213: 1369255776095636437
+    second: bush prizes_7
+  - first:
+      213: 8556395615434206728
+    second: bush prizes_8
+  - first:
+      213: -5457407768102718369
+    second: bush prizes_9
+  - first:
+      213: -7401696088076033659
+    second: bush prizes_10
+  - first:
+      213: 471663280261844581
+    second: bush prizes_11
+  - first:
+      213: -8541831989355209101
+    second: bush prizes_12
+  - first:
+      213: -4655871114184243340
+    second: bush prizes_13
+  - first:
+      213: -4551748191751471395
+    second: bush prizes_14
+  - first:
+      213: -5603527623501339136
+    second: bush prizes_15
+  - first:
+      213: -6111333125706488367
+    second: bush prizes_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bush prizes_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 594
+        width: 598
+        height: 432
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9e29f40e4d14e70800000000000000
+      internalID: 9097786782137903553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 978
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab353574a19d0eca0800000000000000
+      internalID: -5989548797513739334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_2
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 570
+        width: 618
+        height: 448
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75615c9314f6b4b90800000000000000
+      internalID: -7256584048644647337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_3
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 875
+        width: 37
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a684dba01e663f80800000000000000
+      internalID: -8127187459662117210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 880
+        width: 93
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10937bc744e43f190800000000000000
+      internalID: -7929908462812186367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_5
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 710
+        width: 47
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9878e5d8a95902f10800000000000000
+      internalID: 2242957105459791753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_6
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 588
+        width: 411
+        height: 263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a9315363f57a920800000000000000
+      internalID: 3001472363089074814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_7
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 408
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db05dcafd2900310800000000000000
+      internalID: 1369255776095636437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_8
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 385
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e6aaf7a7c6eb670800000000000000
+      internalID: 8556395615434206728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_9
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 28
+        width: 678
+        height: 409
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f54b7cbac846344b0800000000000000
+      internalID: -5457407768102718369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_10
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 246
+        width: 408
+        height: 245
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58164deaf94e74990800000000000000
+      internalID: -7401696088076033659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 51
+        width: 664
+        height: 388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e4a91214fab8600800000000000000
+      internalID: 471663280261844581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_12
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 361
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37e1a6fef01557980800000000000000
+      internalID: -8541831989355209101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_13
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 266
+        width: 46
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477cb07b3e5036fb0800000000000000
+      internalID: -4655871114184243340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_14
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 142
+        width: 48
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde70a3c221f4d0c0800000000000000
+      internalID: -4551748191751471395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 109
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0062d10b0554c32b0800000000000000
+      internalID: -5603527623501339136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bush prizes_16
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 112
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5ef22c6ee203ba0800000000000000
+      internalID: -6111333125706488367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7d994149d81397a499878e301624bfcb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bush prizes_0: 9097786782137903553
+      bush prizes_1: -5989548797513739334
+      bush prizes_10: -7401696088076033659
+      bush prizes_11: 471663280261844581
+      bush prizes_12: -8541831989355209101
+      bush prizes_13: -4655871114184243340
+      bush prizes_14: -4551748191751471395
+      bush prizes_15: -5603527623501339136
+      bush prizes_16: -6111333125706488367
+      bush prizes_2: -7256584048644647337
+      bush prizes_3: -8127187459662117210
+      bush prizes_4: -7929908462812186367
+      bush prizes_5: 2242957105459791753
+      bush prizes_6: 3001472363089074814
+      bush prizes_7: 1369255776095636437
+      bush prizes_8: 8556395615434206728
+      bush prizes_9: -5457407768102718369
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
