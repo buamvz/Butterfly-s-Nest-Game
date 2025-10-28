@@ -50,7 +50,6 @@ public class PuzzleManager : MonoBehaviour
             return;
         }
         //for starting second lot of conversation
-        Debug.Log("close from puzzlemanager");
         GlobalEventManager.Instance.PuzzleClosed();
 
         Debug.Log($"unloading puzzle scene '{puzzleSceneName}'...");

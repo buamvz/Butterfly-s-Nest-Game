@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      vines 1_0: -7575608683921116794
+      vines 1_1: -7787711491113079542
+      vines 1_2: 5578885200688652152
+      vines 1_3: -5977490970938685884
+      vines 1_4: -6061311206254847966
+      vines 1_5: -5227610888377300377
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
