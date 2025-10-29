@@ -29,8 +29,8 @@ public class LightPuzzleManager : MonoBehaviour
         lights[3].SetLight(false);
         lights[4].SetLight(true);
         lights[5].SetLight(false);
-        lights[6].SetLight(true);
-        lights[7].SetLight(false);
+        lights[6].SetLight(false);
+        lights[7].SetLight(true);
     }
 
     public void LightClicked(int index)

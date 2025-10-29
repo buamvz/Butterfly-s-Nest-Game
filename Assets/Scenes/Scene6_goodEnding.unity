@@ -865,6 +865,10 @@ PrefabInstance:
       value: My flower.
       objectReference: {fileID: 0}
     - target: {fileID: 3608570322126913728, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_Size.x
+      value: 18.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3608570322126913728, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -700695325783016418, guid: 9c0824b4e6bd22741a657a285fe4f298, type: 3}
@@ -886,7 +890,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 32e7504d12f099d47aa7835374c3534a, type: 2}
     - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_SceneBindings.Array.data[3].key
@@ -901,6 +905,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -5019977428941507347, guid: 32e7504d12f099d47aa7835374c3534a, type: 2}
     - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_SceneBindings.Array.data[6].key
+      value: 
+      objectReference: {fileID: 3442124605367821091, guid: 32e7504d12f099d47aa7835374c3534a, type: 2}
+    - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_SceneBindings.Array.data[3].value
       value: 
       objectReference: {fileID: 270067388}
@@ -912,6 +920,10 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[5].value
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_SceneBindings.Array.data[6].value
+      value: 
+      objectReference: {fileID: 270067380}
     - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.size
       value: 7

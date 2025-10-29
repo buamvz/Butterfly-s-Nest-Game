@@ -30,17 +30,6 @@ public class DialogueToggle : MonoBehaviour
             Debug.Log("toggle active");
         }
     }
-       
-        //realised i can just wait for dialogue.waiting...
-    //IEnumerator Toggle()
-    //{
-    //    yield return new WaitForSeconds(lineTime);
-    //    ToggleActive();
-
-    //    Debug.Log("swap visibility");
-
-    //}
-
 
     void Update()
     {
