@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,8 +134,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
     nameFileIdTable:
       inside castle background 1 (1)_0: -5315301120359956933
+=======
+<<<<<<< HEAD
+    nameFileIdTable:
+      inside castle background 1 (1)_0: -5315301120359956933
+=======
+    nameFileIdTable: {}
+>>>>>>> 07462690a3e16fc42943248bdaac098e2d95fe6b
+>>>>>>> caba6bac8a57209aec43ab20180fd91423e73da5
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
