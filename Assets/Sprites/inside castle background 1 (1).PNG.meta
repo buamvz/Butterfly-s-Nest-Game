@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 58240e07ffdf62648be36197216130ac
+guid: a38603ad6d8a19947b64eff06d51dd74
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1759957738934572689
-    second: good ending giving flower 4_0
+      213: -5315301120359956933
+    second: inside castle background 1 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: good ending giving flower 4_0
+      name: inside castle background 1 (1)_0
       rect:
         serializedVersion: 2
-        x: 55
+        x: 0
         y: 0
-        width: 1865
+        width: 1920
         height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19615e82d30ac6810800000000000000
-      internalID: 1759957738934572689
+      spriteID: b3e75beeac14c36b0800000000000000
+      internalID: -5315301120359956933
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      good ending giving flower 4_0: 1759957738934572689
+      inside castle background 1 (1)_0: -5315301120359956933
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
