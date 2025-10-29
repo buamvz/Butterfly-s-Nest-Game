@@ -134,7 +134,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
+    nameFileIdTable:
+      good ending flower with background _0: -700695325783016418
+=======
     nameFileIdTable: {}
+>>>>>>> 07462690a3e16fc42943248bdaac098e2d95fe6b
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

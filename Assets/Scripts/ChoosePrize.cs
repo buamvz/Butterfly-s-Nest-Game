@@ -83,7 +83,7 @@ public class ChoosePrize : MonoBehaviour
 
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
 
         SelectingItem();
     }
@@ -96,8 +96,10 @@ public class ChoosePrize : MonoBehaviour
         while (dialogue.waiting)
             yield return null;
 
-        yield return new WaitForSeconds(1);
-
+        //yield return new WaitForSeconds(1);
+        colliderOne.enabled = false;
+        colliderTwo.enabled = false;
+        colliderThree.enabled = false;
         //managerScript.ClosePuzzle();
     }
 

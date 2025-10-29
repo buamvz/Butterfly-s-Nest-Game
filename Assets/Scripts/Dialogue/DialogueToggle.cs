@@ -44,8 +44,8 @@ public class DialogueToggle : MonoBehaviour
 
     void Update()
     {
-        if (dialogueScript.waiting)
-            return;
+        //if (dialogueScript.waiting)
+        //    return;
 
         if (dialogueScript.index != lastDialogueIndex)
         {
