@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 58240e07ffdf62648be36197216130ac
+guid: 245b0de0a891e694483f76427704489b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1759957738934572689
-    second: good ending giving flower 4_0
+      213: -7724555884180433344
+    second: good ending giving flower 4 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: good ending giving flower 4_0
+      name: good ending giving flower 4 (1)_0
       rect:
         serializedVersion: 2
         x: 55
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 19615e82d30ac6810800000000000000
-      internalID: 1759957738934572689
+      spriteID: 04695cb895ddcc490800000000000000
+      internalID: -7724555884180433344
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      good ending giving flower 4_0: 1759957738934572689
+      good ending giving flower 4 (1)_0: -7724555884180433344
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
