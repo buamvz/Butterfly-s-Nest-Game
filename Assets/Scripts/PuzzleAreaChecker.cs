@@ -12,7 +12,7 @@ public class PuzzleAreaChecker : MonoBehaviour
     public bool webCleared;
 
     //to turn on and off the prize colliders
-    [SerializeField] List<PolygonCollider2D> collidersToDisable;
+    [SerializeField] List<BoxCollider2D> collidersToDisable;
 
     //prize colliders off when started
     private void Awake()
@@ -30,7 +30,7 @@ public class PuzzleAreaChecker : MonoBehaviour
 
     private void ToggleColliders(bool show)
     {
-        foreach (PolygonCollider2D collider in collidersToDisable)
+        foreach (BoxCollider2D collider in collidersToDisable)
         {
             if (collider != null)
                 collider.enabled = show;

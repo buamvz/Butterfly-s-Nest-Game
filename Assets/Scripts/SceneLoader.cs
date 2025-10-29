@@ -12,15 +12,16 @@ public class SceneLoader : MonoBehaviour
     //for testing
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            LoadNextScene();
-        }
+        //if (Input.GetKeyDown(KeyCode.Tab))
+        //{
+        //    LoadNextScene();
+        //}
     }
 
     public void LoadNextScene()
     {
         StartCoroutine(LoadScene(scene));
+        Debug.Log("loading..." + scene);
     }
     IEnumerator LoadScene(string level)
     {

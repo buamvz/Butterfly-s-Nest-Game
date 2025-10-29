@@ -11,6 +11,7 @@ public class PlayCutscene : MonoBehaviour
     public void StartCutscene()
     {
         timelineDirector.Play();
+        colliderInteraction.enabled = false;
     }
 
     void Update()
