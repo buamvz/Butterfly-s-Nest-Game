@@ -103,7 +103,6 @@ public class ChoosePrize : MonoBehaviour
                 col.enabled = false;
         }
 
-        // You can uncomment this when ready
         managerScript.ClosePuzzle();
     }
 }
