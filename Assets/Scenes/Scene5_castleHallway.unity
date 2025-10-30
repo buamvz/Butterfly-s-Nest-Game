@@ -737,7 +737,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1443833986}
   colliderInteraction: {fileID: 465164908}
   dialogueStartLine: 0
-  dialogueEndLine: 2
+  dialogueEndLine: 1
 --- !u!1 &490520895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1443833986}
   colliderInteraction: {fileID: 655147062}
   dialogueStartLine: 0
-  dialogueEndLine: 2
+  dialogueEndLine: 1
 --- !u!61 &655147062
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1696,7 +1696,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1443833986}
   colliderInteraction: {fileID: 1095173160}
   dialogueStartLine: 0
-  dialogueEndLine: 2
+  dialogueEndLine: 1
 --- !u!61 &1095173160
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2020,7 +2020,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1443833986}
   colliderInteraction: {fileID: 1198341218}
   dialogueStartLine: 0
-  dialogueEndLine: 2
+  dialogueEndLine: 1
 --- !u!61 &1198341218
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2202,7 +2202,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1443833986}
   colliderInteraction: {fileID: 1409516583}
   dialogueStartLine: 0
-  dialogueEndLine: 2
+  dialogueEndLine: 1
 --- !u!61 &1409516583
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2581,7 +2581,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1443833986}
   colliderInteraction: {fileID: 1574357884}
   dialogueStartLine: 0
-  dialogueEndLine: 2
+  dialogueEndLine: 1
 --- !u!61 &1574357884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2850,7 +2850,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1443833986}
   colliderInteraction: {fileID: 1805787219}
   dialogueStartLine: 0
-  dialogueEndLine: 2
+  dialogueEndLine: 1
 --- !u!61 &1805787219
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3095,7 +3095,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1443833986}
   colliderInteraction: {fileID: 1868972629}
   dialogueStartLine: 0
-  dialogueEndLine: 2
+  dialogueEndLine: 1
 --- !u!61 &1868972629
 BoxCollider2D:
   m_ObjectHideFlags: 0
