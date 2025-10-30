@@ -588,6 +588,7 @@ MonoBehaviour:
   prizeCollider: {fileID: 135395042}
   dialogueStartLine: 2
   dialogueEndLine: 3
+  isClickable: 0
   alreadyInspected: 0
   selectPrize: 0
 --- !u!61 &135395042
@@ -2835,6 +2836,7 @@ MonoBehaviour:
   prizeCollider: {fileID: 1027200599}
   dialogueStartLine: 0
   dialogueEndLine: 1
+  isClickable: 0
   alreadyInspected: 0
   selectPrize: 0
 --- !u!212 &1027200598
@@ -4719,6 +4721,7 @@ MonoBehaviour:
   prizeCollider: {fileID: 1430597281}
   dialogueStartLine: 4
   dialogueEndLine: 5
+  isClickable: 0
   alreadyInspected: 0
   selectPrize: 0
 --- !u!61 &1430597281

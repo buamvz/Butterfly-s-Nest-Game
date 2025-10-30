@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseButton : MonoBehaviour
 {
@@ -18,10 +19,36 @@ public class PauseButton : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         col = GetComponent<BoxCollider2D>();
 
-        if (pauseMenu == null)
-            pauseMenu = FindObjectOfType<PauseMenu>();
-
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
+        FindPauseMenu();
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        FindPauseMenu();
+    }
+
+    private void FindPauseMenu()
+    {
+        if (pauseMenu == null)
+        {
+            pauseMenu = FindObjectOfType<PauseMenu>(true);
+            if (pauseMenu != null)
+                Debug.Log("[PauseButton] found PauseMenu ");
+            else
+                Debug.LogWarning("[PauseButton] missing PauseMenu ");
+        }
     }
 
     private void OnEnable()

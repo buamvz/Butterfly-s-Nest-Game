@@ -1,7 +1,8 @@
-using Unity.VisualScripting;
+﻿using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
+using System.Linq;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -14,11 +15,46 @@ public class PauseMenu : MonoBehaviour
 
     private MouseParallax[] parallaxScript;
 
+    private readonly string[] puzzleScenes = 
+        { "Puzzle1_Web", 
+        "Puzzle3_Vines", 
+        "Puzzle4_Lights" };
+
     private void Start()
     {
         parallaxScript = FindObjectsOfType<MouseParallax>(true);
 
-        DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDestroy()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        bool isPuzzleScene = puzzleScenes.Contains(scene.name);
+
+        if (pauseMenuUI == null)
+        {
+            pauseMenuUI = GameObject.Find("PauseMenuUI");
+            if (pauseMenuUI == null)
+                Debug.LogWarning("[PauseMenu] missing manu" + scene.name);
+        }
+
+        if (pauseButton == null)
+        {
+            pauseButton = FindObjectOfType<PauseButton>(true);
+            if (pauseButton == null)
+                Debug.LogWarning("[PauseMenu] missing button " + scene.name);
+        }
+        gameObject.SetActive(!isPuzzleScene);
+
+        if (pauseButton != null)
+            pauseButton.gameObject.SetActive(!isPuzzleScene);
+
+        Debug.Log($"[PauseMenu] scene loaded: {scene.name} → PauseMenu {(isPuzzleScene ? "disabled" : "enabled")}");
     }
 
     private void Update()
@@ -52,6 +88,8 @@ public class PauseMenu : MonoBehaviour
         GameIsPaused = true;
         ToggleParallax(false);
         OnPauseStateChanged?.Invoke(true);
+
+        Debug.Log("Pause menu active: " + pauseMenuUI.activeSelf);
 
     }
 
