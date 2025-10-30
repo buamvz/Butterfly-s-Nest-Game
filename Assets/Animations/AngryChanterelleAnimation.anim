@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MeetingChanterelleAnimation
+  m_Name: AngryChanterelleAnimation
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,22 +21,22 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0.5833333
-      value: {fileID: -8956540019022270036, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
-    - time: 1.15
-      value: {fileID: -8956540019022270036, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
+      value: {fileID: 2283377544461383938, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
+    - time: 1.1666666
+      value: {fileID: 2283377544461383938, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
     attribute: m_Sprite
-    path: Chanterelle/Chantarelle2
+    path: Chanterelle/Chantarelle4
     classID: 212
     script: {fileID: 0}
     flags: 2
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 969493817761277673, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
+      value: {fileID: -2704035999185144131, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
     - time: 0.5833333
-      value: {fileID: 969493817761277673, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
+      value: {fileID: -2704035999185144131, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
     attribute: m_Sprite
-    path: Chanterelle/Chantarelle3
+    path: Chanterelle/Chantarelle5
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -48,7 +48,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 1348554584
+      path: 3103976045
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -57,7 +57,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 661028814
+      path: 3456490235
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -66,16 +66,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -8956540019022270036, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
-    - {fileID: -8956540019022270036, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
-    - {fileID: 969493817761277673, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
-    - {fileID: 969493817761277673, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
+    - {fileID: 2283377544461383938, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
+    - {fileID: 2283377544461383938, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
+    - {fileID: -2704035999185144131, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
+    - {fileID: -2704035999185144131, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1666666
+    m_StopTime: 1.1833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

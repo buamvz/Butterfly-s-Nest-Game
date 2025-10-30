@@ -303,7 +303,52 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1188975735197794616, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[0]'
+      value: Who goes there!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[1]'
+      value: Who said you were welcome into my castle?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[2]'
+      value: I know every living and deceased creature within these forest.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[3]'
+      value: And yet, I have nevre seen one like... you before.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[4]'
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[5]'
+      value: What is your name?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[6]'
+      value: Elena...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[7]'
+      value: Well then Ms.... Elena, what is your buisness here hm?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[8]'
+      value: You have brought me a gift?
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[9]'
+      value: Now what kinda of maniac would go through all that effort to bring me
+        a gift?
       objectReference: {fileID: 0}
     - target: {fileID: 3246720736364196607, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_Camera
@@ -324,6 +369,10 @@ PrefabInstance:
     - target: {fileID: 4649712122774648915, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_Name
       value: Chanterelle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001194948869824893, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_text
+      value: ???
       objectReference: {fileID: 0}
     - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_PlayableAsset
@@ -357,6 +406,18 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[5].value
       value: 
       objectReference: {fileID: 1103920324}
+    - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_ExposedReferences.m_References.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_ExposedReferences.m_References.Array.data[0].first
+      value: a89e63b2e0f6c50488c26fea1ed3666c
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_ExposedReferences.m_References.Array.data[0].second
+      value: 
+      objectReference: {fileID: 216445366}
     - target: {fileID: 7603955027688190321, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_Camera
       value: 
@@ -367,7 +428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8409068747277811655, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8605462799856562307, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_LocalPosition.x
@@ -418,6 +479,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7265403549414389362, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 216445367}
+    - targetCorrespondingSourceObject: {fileID: 7265403549414389362, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 216445365}
   m_SourcePrefab: {fileID: 100100000, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
 --- !u!4 &216445363 stripped
@@ -452,6 +516,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &216445366 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+  m_PrefabInstance: {fileID: 216445362}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc699949398947c4ebf39999b7747f85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &216445367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216445364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b53348a76db4a9643820163baca736f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueScript: {fileID: 216445366}
+  anim: {fileID: 216445365}
+  neutralLines: 04000000
+  angryLines: 0000000001000000
+  eyesClosedLines: 020000000500000009000000
+  smileLines: 060000000700000008000000
+  meetingLines: 03000000
 --- !u!1 &316278684
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +641,10 @@ PrefabInstance:
     - target: {fileID: -8653719598885068355, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
       propertyPath: m_Name
       value: Chanterelle
+      objectReference: {fileID: 0}
+    - target: {fileID: -8653719598885068355, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: b68072256f7e71447889c7db6b41aff1, type: 3}
       propertyPath: m_LocalScale.x
