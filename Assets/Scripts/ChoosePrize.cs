@@ -1,74 +1,58 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ChoosePrize : MonoBehaviour
 {
-
-    [SerializeField] PuzzleAreaChecker puzzleScript;
     [SerializeField] PuzzleManager managerScript;
 
     [Header("Dialogue")]
     [SerializeField] Dialogue dialogueScript;
 
-    [SerializeField] private int dialogueOne;
-    [SerializeField] private int dialogueTwo;
-    [SerializeField] private int dialogueThree;
+    [SerializeField] private List<int> dialogueIndexes = new List<int>();
 
-    [Header("Colliders")]
-    [SerializeField] BoxCollider2D colliderOne;
-    [SerializeField] BoxCollider2D colliderTwo;
-    [SerializeField] BoxCollider2D colliderThree;
+    [Header("Prizes")]
+    [SerializeField] private List<Prize> prizes = new List<Prize>();
 
     public bool choosingItem;
     public bool allItemsInspected;
 
-    [SerializeField] PrizeWeb prizeOne;
-    [SerializeField] PrizeWeb prizeTwo;
-    [SerializeField] PrizeWeb prizeThree;
 
     [SerializeField] Dialogue dialogue;
 
-    void Update()
+    private void Update()
     {
-
-        if (!allItemsInspected && prizeOne.alreadyInspected && prizeTwo.alreadyInspected && prizeThree.alreadyInspected && !dialogue.waiting)
+        if (!allItemsInspected && AllPrizesInspected() && !dialogueScript.waiting)
         {
-            dialogue.EndDialogue();
-
+            dialogueScript.EndDialogue();
             StartCoroutine(Wait());
         }
-        
-        if (allItemsInspected && !dialogue.waiting)
+
+        if (allItemsInspected && !dialogueScript.waiting)
             choosingItem = true;
 
-        if (Input.GetMouseButtonDown(0) && allItemsInspected && !dialogueScript.waiting && choosingItem)
+        if (Input.GetMouseButtonDown(0) && choosingItem && !dialogueScript.waiting)
         {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-
-            if (hit.collider != null && hit.collider == colliderOne)
-            {
-                Debug.Log("You chose the gold.");
-                dialogueScript.indexStart = dialogueOne;
-                dialogueScript.indexEnd = dialogueOne;
-                StartCoroutine(CallClosePuzzle());
-            }
-            else if (hit.collider != null && hit.collider == colliderTwo)
-            {
-                Debug.Log("You chose the flower.");
-                dialogueScript.indexStart = dialogueTwo;
-                dialogueScript.indexEnd = dialogueTwo;
-                StartCoroutine(CallClosePuzzle());
-            }
-            else if (hit.collider != null && hit.collider == colliderThree)
-            {
-                Debug.Log("You chose the hand.");
-                dialogueScript.indexStart = dialogueThree;
-                dialogueScript.indexEnd = dialogueThree;
-                StartCoroutine(CallClosePuzzle());
-            }
+            HandlePrizeSelection();
         }
+    }
+
+    private bool AllPrizesInspected()
+    {
+        foreach (var prize in prizes)
+        {
+            if (!prize.alreadyInspected)
+                return false;
+        }
+        return true;
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        SelectingItem();
     }
 
     void SelectingItem()
@@ -80,27 +64,47 @@ public class ChoosePrize : MonoBehaviour
 
         allItemsInspected = true;
     }
-
-    IEnumerator Wait()
+    private void HandlePrizeSelection()
     {
-        yield return new WaitForSeconds(0.5f);
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
 
-        SelectingItem();
+        if (hit.collider == null) return;
+
+        for (int i = 0; i < prizes.Count; i++)
+        {
+            var prize = prizes[i];
+            if (hit.collider == prize.GetCollider())
+            {
+                Debug.Log($"You chose the {prize.prizeName}.");
+
+                dialogueScript.indexStart = dialogueIndexes[i];
+                dialogueScript.indexEnd = dialogueIndexes[i];
+
+                StartCoroutine(CallClosePuzzle());
+                break;
+            }
+        }
     }
 
-    IEnumerator CallClosePuzzle()
+    private IEnumerator CallClosePuzzle()
     {
         choosingItem = false;
         dialogueScript.StartDialogue();
 
-        while (dialogue.waiting)
+        while (dialogueScript.waiting)
             yield return null;
 
-        //yield return new WaitForSeconds(1);
-        colliderOne.enabled = false;
-        colliderTwo.enabled = false;
-        colliderThree.enabled = false;
-        //managerScript.ClosePuzzle();
-    }
+        // disable all prize colliders 
+        foreach (var prize in prizes)
+        {
+            var col = prize.GetCollider();
+            if (col != null)
+                col.enabled = false;
+        }
 
+        // You can uncomment this when ready
+        managerScript.ClosePuzzle();
+    }
 }
+

@@ -6,22 +6,25 @@ using UnityEngine;
 public class VinesAreaChecker : MonoBehaviour
 {
     private int vinesInArea = 0;
-    public static event Action OnWebCleared;
+    public static event Action OnVinesCleared;
 
-    public bool allItemsInspected;
+    public bool vinesCleared;
 
     //[SerializeField] PrizeClick handClick;
 
     //[SerializeField] Dialogue dialogue;
 
-    public bool webCleared;
+    [SerializeField] private GameObject prizeScene;
 
     //to turn on and off the prize colliders
-    [SerializeField] List<PolygonCollider2D> collidersToDisable;
+   [SerializeField] private List<Collider2D> collidersToDisable = new List<Collider2D>();
 
     //prize colliders off when started
     private void Awake()
     {
+        if (prizeScene != null)
+            prizeScene.SetActive(false);
+
         ToggleColliders(false);
     }
 
@@ -33,14 +36,6 @@ public class VinesAreaChecker : MonoBehaviour
         }
     }
 
-    private void ToggleColliders(bool show)
-    {
-        foreach (PolygonCollider2D collider in collidersToDisable)
-        {
-            if (collider != null)
-                collider.enabled = show;
-        }
-    }
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -51,24 +46,38 @@ public class VinesAreaChecker : MonoBehaviour
             if (vinesInArea <= 0)
             {
                 vinesInArea = 0;
-                Debug.Log("door is all cleared");
-                ToggleColliders(true);
-                OnWebCleared?.Invoke();
+                Debug.Log("vines all cleared");
 
-                webCleared = true;
+                vinesCleared = true;
+
+                ActivatePrizeScene();
+                ToggleColliders(true);
+                OnVinesCleared?.Invoke();
             }
         }
     }
 
-//    void Update()
-//    {
-//        if (!allItemsInspected && handClick.alreadyInspected && flowerClick.alreadyInspected && goldClick.alreadyInspected)
-//        {
-//            Debug.Log("all items inspected");
-//            allItemsInspected = true;
-//            //AllItemsInspected?.Invoke(); 
-//        }
-//        else
-//            return;
-//    }
+    private void ActivatePrizeScene()
+    {
+        if (prizeScene != null)
+        {
+            prizeScene.SetActive(true);
+
+            var prizePosition = prizeScene.transform.position;
+            prizeScene.transform.position = new Vector3(prizePosition.x, prizePosition.y, -5f);
+        }
+        else
+        {
+            Debug.LogWarning("no prize scene assigned");
+        }
+    }
+    private void ToggleColliders(bool show)
+    {
+        foreach (Collider2D collider in collidersToDisable)
+        {
+            if (collider != null)
+                collider.enabled = show;
+        }
+    }
+
 }
