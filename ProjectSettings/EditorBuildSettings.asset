@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Puzzle4_Lights.unity
     guid: cdf2f60f2f07be541bd5d136c341c2df
   - enabled: 1
-    path: Assets/Scenes/Scene6_goodEnding.unity
+    path: Assets/Scenes/GoodEnding.unity
     guid: 0060ecbea8e0f7a4197c525e0ebdd7cf
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
