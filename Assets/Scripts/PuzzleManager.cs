@@ -50,13 +50,22 @@ public class PuzzleManager : MonoBehaviour
             return;
         }
         //for starting second lot of conversation
+        if (GlobalEventManager.Instance != null)
         GlobalEventManager.Instance.PuzzleClosed();
 
         Debug.Log($"unloading puzzle scene '{puzzleSceneName}'...");
 
+        Scene mainScene = SceneManager.GetSceneByName(mainSceneName);
+        if (mainScene.IsValid())
+        {
+            SceneManager.SetActiveScene(mainScene);
+        }
+        else
+        {
+            Debug.LogWarning("Main scene not found");
+        }
 
         SceneManager.UnloadSceneAsync(puzzleSceneName);
-
 
     }
 

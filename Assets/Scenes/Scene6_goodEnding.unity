@@ -965,7 +965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5001194948869824893, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_text
-      value: Chanterelle
+      value: Queen Chanterelle
       objectReference: {fileID: 0}
     - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_PlayableAsset

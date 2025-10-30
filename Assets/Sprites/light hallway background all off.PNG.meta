@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: e2036d83fb2eaac4c9afedc24dc2ec56
+guid: 782702eb7668ff244ac390122ee06926
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2203301909749915178
-    second: PauseAndPaper_0
-  - first:
-      213: 2355459736618336937
-    second: PauseAndPaper_1
-  - first:
-      213: -5026286090684738073
-    second: PauseAndPaper_2
-  - first:
-      213: 2330729819998638161
-    second: PauseAndPaper_3
-  - first:
-      213: -4306699392869548964
-    second: PauseAndPaper_4
+      213: 8727664962320114331
+    second: light hallway background all off_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PauseAndPaper_0
+      name: light hallway background all off_0
       rect:
         serializedVersion: 2
-        x: 54
-        y: 933
-        width: 142
-        height: 112
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,96 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a2e559fc963b39e10800000000000000
-      internalID: 2203301909749915178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PauseAndPaper_1
-      rect:
-        serializedVersion: 2
-        x: 237
-        y: 920
-        width: 172
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9a20fd3962640b020800000000000000
-      internalID: 2355459736618336937
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PauseAndPaper_2
-      rect:
-        serializedVersion: 2
-        x: 514
-        y: 59
-        width: 922
-        height: 968
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7e5df315e6b0f3ab0800000000000000
-      internalID: -5026286090684738073
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PauseAndPaper_3
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 739
-        width: 164
-        height: 134
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 150dd6c2c6a685020800000000000000
-      internalID: 2330729819998638161
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PauseAndPaper_4
-      rect:
-        serializedVersion: 2
-        x: 225
-        y: 722
-        width: 196
-        height: 165
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5cbe9558b78b34c0800000000000000
-      internalID: -4306699392869548964
+      spriteID: b92a6b5ca05ee1970800000000000000
+      internalID: 8727664962320114331
       vertices: []
       indices: 
       edges: []
@@ -234,12 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      PauseAndPaper_0: 2203301909749915178
-      PauseAndPaper_1: 2355459736618336937
-      PauseAndPaper_2: -5026286090684738073
-      PauseAndPaper_3: 2330729819998638161
-      PauseAndPaper_4: -4306699392869548964
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
