@@ -40,7 +40,7 @@ public class DialogueToggle : MonoBehaviour
         {
             lastDialogueIndex = dialogueScript.index;
 
-            if(dialogueScript.index == triggerLine)
+            if(dialogueScript.index == triggerLine) 
             {
                 if(changeOnce)
                 {

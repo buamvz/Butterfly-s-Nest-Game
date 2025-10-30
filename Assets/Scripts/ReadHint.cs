@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class ReadHint : MonoBehaviour
@@ -41,7 +42,7 @@ public class ReadHint : MonoBehaviour
                     spriteRenderer.sprite = hoverSprite;
 
                     if (Input.GetMouseButton(0) && !dialogue.waiting)
-                        ToggleHintWindow(true);
+                        StartCoroutine(ToggleHintWindow(true));
                 }
                 else
                 {
@@ -58,21 +59,28 @@ public class ReadHint : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(cursorPos, Vector2.zero);
             if (hit.collider == null && Input.GetMouseButton(0))
             {
-                ToggleHintWindow(false);
+                dialogue.indexStart = 3;
+                dialogue.indexEnd = 3;
+                dialogue.StartDialogue();
+
+                StartCoroutine(ToggleHintWindow(false));
             }
 
         }
 
     }
 
-    void ToggleHintWindow(bool show)
+    IEnumerator ToggleHintWindow(bool show)
     {
         hintPopUp.SetActive(show);
         readingHint = show;
 
-        ToggleColliders(!show);
-
         spriteRenderer.enabled = !show;
+
+        if(show == false)
+            yield return new WaitForSeconds(2);
+
+        ToggleColliders(!show);
     }
 
     void ToggleColliders(bool show)
@@ -82,4 +90,5 @@ public class ReadHint : MonoBehaviour
             collider.enabled = show;
         }
     }
+
 }
