@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5ddd8ac44803f484bab6065ce82096f5
+guid: 5ca4308170494d44391d96d8a7a87d18
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7153036749321074913
-    second: light hallway background all on_0
+      213: -8271031136915426691
+    second: background-path_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: light hallway background all on_0
+      name: background-path_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e8f89c6601b44360800000000000000
-      internalID: 7153036749321074913
+      spriteID: d72f5f5b005673d80800000000000000
+      internalID: -8271031136915426691
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      light hallway background all on_0: 7153036749321074913
+      background-path_0: -8271031136915426691
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

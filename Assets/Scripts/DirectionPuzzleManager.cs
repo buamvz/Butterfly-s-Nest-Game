@@ -7,6 +7,8 @@ public class DirectionPuzzleManager : MonoBehaviour
     //need area dialogue and link to other scenes
 
     public Dialogue dialogueScript;
+    [SerializeField] ConfirmPath confirm;
+    [SerializeField] SceneLoader loadScene;
 
     [SerializeField] public int dialogueStartLine;
     [SerializeField] public int dialogueEndLine;
@@ -38,14 +40,14 @@ public class DirectionPuzzleManager : MonoBehaviour
         {
             sprite.enabled = false;
         }
-
-        puzzlePlaying = true;
     }
 
     void Update()
     {
         if (dialogueScript.waiting == true)
             return;
+
+
 
         if (Input.GetMouseButtonDown(0) && !dialogueScript.waiting && !confirmingDirection && puzzlePlaying)
         {
@@ -85,16 +87,15 @@ public class DirectionPuzzleManager : MonoBehaviour
             if (hit.collider != null && hit.collider.CompareTag("GoForward"))
             {
                 Debug.Log("leave");
-                dialogueScript.indexStart = 4;
-                dialogueScript.indexEnd = 4;
-                dialogueScript.StartDialogue();
+
+                anim.SetTrigger("GoMid");
+                loadScene.LoadNextScene();
             }
         }
     }
 
     public void ToggleActive()
     {
-
         foreach (BoxCollider2D collider in directionColliders)
         {
             collider.enabled = !collider.enabled;
@@ -140,11 +141,16 @@ public class DirectionPuzzleManager : MonoBehaviour
     IEnumerator ConfirmDirection()
     {
         confirmingDirection = true;
+
         ToggleActive();
         dialogueScript.StartDialogue();
+        
+        confirm.ShowOptions(true);
+
+        confirm.confirming = true;
 
         //waiting for input
-        while (!Input.GetKeyDown(KeyCode.Space))
+        while (confirm.confirming)
         {
             yield return null;
         }
@@ -153,9 +159,22 @@ public class DirectionPuzzleManager : MonoBehaviour
         ToggleActive();
         dialogueScript.EndDialogue();
 
-        playerSequence.Add(thisDirection);
 
-        ChooseDirection();
+        //yes or no
+        if (confirm.confirmPath)
+        {
+            playerSequence.Add(thisDirection);
+            ChooseDirection();
+        }
+        else if (!confirm.confirmPath)
+        {
+            dialogueScript.indexStart = 7;
+            dialogueScript.indexEnd = 7;
+
+            dialogueScript.StartDialogue();
+        }
+
+
     }
 
     IEnumerator Correct()
@@ -174,6 +193,10 @@ public class DirectionPuzzleManager : MonoBehaviour
 
             directionColliders[1].enabled = false;
             directionColliders[2].enabled = false;
+
+            dialogueScript.indexStart = 4;
+            dialogueScript.indexEnd = 4;
+            dialogueScript.StartDialogue();
         }
     }
 
@@ -188,6 +211,11 @@ public class DirectionPuzzleManager : MonoBehaviour
         Debug.Log("wrong - restart");
         playerSequence.Clear();
         sequenceIndex = 0;
+
+        dialogueScript.indexStart = 5;
+        dialogueScript.indexEnd = 5;
+
+        dialogueScript.StartDialogue();
     }
 
 }
