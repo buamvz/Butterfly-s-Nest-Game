@@ -1,17 +1,24 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
 
+    [SerializeField] private PauseButton pauseButton;
+
+    public static event Action<bool> OnPauseStateChanged;
+
     private MouseParallax[] parallaxScript;
 
     private void Start()
     {
         parallaxScript = FindObjectsOfType<MouseParallax>(true);
+
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()
@@ -36,13 +43,16 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         GameIsPaused = false;
         ToggleParallax(true);
+        OnPauseStateChanged?.Invoke(false);
     }
-    void Pause()
+    public void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
         ToggleParallax(false);
+        OnPauseStateChanged?.Invoke(true);
+
     }
 
     public void LoadMenu()

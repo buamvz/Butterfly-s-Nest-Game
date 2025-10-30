@@ -579,18 +579,16 @@ MonoBehaviour:
   score: 1
   prizeName: Flower
   prize: {fileID: 1735908055}
-  puzzleAreaScript: {fileID: 1348391844}
+  choosePrizeScript: {fileID: 1735908055}
+  dialogueScript: {fileID: 201852946}
   spriteRenderer: {fileID: 135395038}
   defaultSprite: {fileID: 2515894495945581116, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   hoverSprite: {fileID: 9143704816120331038, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   holdSprite: {fileID: -1831484454515672926, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
-  polygonCollider: {fileID: 135395042}
-  dialogueScript: {fileID: 201852946}
+  prizeCollider: {fileID: 135395042}
   dialogueStartLine: 2
   dialogueEndLine: 3
-  isClickable: 0
   alreadyInspected: 0
-  choosingItem: 0
   selectPrize: 0
 --- !u!61 &135395042
 BoxCollider2D:
@@ -2828,18 +2826,16 @@ MonoBehaviour:
   score: 2
   prizeName: Hand
   prize: {fileID: 1735908055}
-  puzzleAreaScript: {fileID: 1348391844}
+  choosePrizeScript: {fileID: 1735908055}
+  dialogueScript: {fileID: 201852946}
   spriteRenderer: {fileID: 1027200598}
   defaultSprite: {fileID: 8987237264435805333, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   hoverSprite: {fileID: 836212261557002003, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   holdSprite: {fileID: 5995183257624138762, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
-  polygonCollider: {fileID: 1027200599}
-  dialogueScript: {fileID: 201852946}
+  prizeCollider: {fileID: 1027200599}
   dialogueStartLine: 0
   dialogueEndLine: 1
-  isClickable: 0
   alreadyInspected: 0
-  choosingItem: 0
   selectPrize: 0
 --- !u!212 &1027200598
 SpriteRenderer:
@@ -4714,18 +4710,16 @@ MonoBehaviour:
   score: 0
   prizeName: Gold
   prize: {fileID: 1735908055}
-  puzzleAreaScript: {fileID: 1348391844}
+  choosePrizeScript: {fileID: 1735908055}
+  dialogueScript: {fileID: 201852946}
   spriteRenderer: {fileID: 1430597277}
   defaultSprite: {fileID: -3068821406049059056, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   hoverSprite: {fileID: 6431532348433149009, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
   holdSprite: {fileID: 1763496370880569857, guid: 98c4044019e67d749bfba4c416e51ba8, type: 3}
-  polygonCollider: {fileID: 1430597281}
-  dialogueScript: {fileID: 201852946}
+  prizeCollider: {fileID: 1430597281}
   dialogueStartLine: 4
   dialogueEndLine: 5
-  isClickable: 0
   alreadyInspected: 0
-  choosingItem: 0
   selectPrize: 0
 --- !u!61 &1430597281
 BoxCollider2D:
@@ -5491,20 +5485,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dd07b8aeab3f824c87128b96808e056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puzzleScript: {fileID: 1348391844}
   managerScript: {fileID: 1348391846}
   dialogueScript: {fileID: 201852946}
-  dialogueOne: 8
-  dialogueTwo: 7
-  dialogueThree: 6
-  colliderOne: {fileID: 1430597281}
-  colliderTwo: {fileID: 135395042}
-  colliderThree: {fileID: 1027200599}
+  dialogueIndexes: 080000000700000006000000
+  prizes:
+  - {fileID: 1430597280}
+  - {fileID: 135395041}
+  - {fileID: 1027200597}
   choosingItem: 0
   allItemsInspected: 0
-  prizeOne: {fileID: 1430597280}
-  prizeTwo: {fileID: 135395041}
-  prizeThree: {fileID: 1027200597}
   dialogue: {fileID: 201852946}
 --- !u!1 &1817794159
 GameObject:
