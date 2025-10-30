@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class LightPuzzleManager : MonoBehaviour
 {
     [SerializeField] private LightController[] lights;
+
+    [SerializeField] private PuzzleManager puzzleManager;
 
     private int[,] toggleMatrix = new int[,]
         {
@@ -37,15 +40,31 @@ public class LightPuzzleManager : MonoBehaviour
     {
         for (int i = 0; i < lights.Length; i++)
         {
-            if (toggleMatrix[index, i] ==1 )
+            if (toggleMatrix[index, i] == 1 )
             {
                 lights[i].ToggleLight();
             }
         }
-        if(CheckAllOn() || CheckAllOff())
+
+        if (CheckAllOn() || CheckAllOff())
         {
-            Debug.Log("puzzle complete");
-            //next scene after this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+            Debug.Log("Puzzle complete");
+
+            bool allOn = CheckAllOn();
+
+            if (BackgroundController.Instance != null)
+            {
+                BackgroundController.Instance.SetBackground(allOn);
+            }
+            else
+            {
+                Debug.LogWarning("no BackgroundController instance found");
+            }
+
+            if (puzzleManager != null)
+            {
+                puzzleManager.ClosePuzzle();
+            }
         }
     }
 

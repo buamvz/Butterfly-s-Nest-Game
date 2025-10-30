@@ -570,7 +570,6 @@ GameObject:
   m_Component:
   - component: {fileID: 681064498}
   - component: {fileID: 681064497}
-  - component: {fileID: 681064496}
   - component: {fileID: 681064499}
   m_Layer: 0
   m_Name: Main Camera
@@ -579,14 +578,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &681064496
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681064495}
-  m_Enabled: 1
 --- !u!20 &681064497
 Camera:
   m_ObjectHideFlags: 0
@@ -2862,6 +2853,53 @@ MonoBehaviour:
   lightIsOn: 0
   spotlight: {fileID: 1114324382}
   lightIndex: 0
+--- !u!1 &1497000165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1497000167}
+  - component: {fileID: 1497000166}
+  m_Layer: 0
+  m_Name: PuzzleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1497000166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497000165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec79e10f553af2b4cacf7debdcd73e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSceneName: Scene5_castleHallway
+  puzzleSceneName: Puzzle4_Lights
+  puzzleCloses: 0
+--- !u!4 &1497000167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497000165}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.61344326, y: 5.5119214, z: 0.027152937}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1563013903
 GameObject:
   m_ObjectHideFlags: 0
@@ -3352,6 +3390,7 @@ MonoBehaviour:
   - {fileID: 721001023}
   - {fileID: 1489537354}
   - {fileID: 730504212}
+  puzzleManager: {fileID: 1497000166}
 --- !u!1001 &1889378788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3633,3 +3672,4 @@ SceneRoots:
   - {fileID: 1726938098}
   - {fileID: 1889378788}
   - {fileID: 1309132743}
+  - {fileID: 1497000167}
