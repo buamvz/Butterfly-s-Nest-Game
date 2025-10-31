@@ -621,7 +621,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88203308}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -1740,7 +1740,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455578280}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -4109,7 +4109,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218338209}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -6782,6 +6782,7 @@ GameObject:
   - component: {fileID: 2091674134}
   - component: {fileID: 2091674137}
   - component: {fileID: 2091674136}
+  - component: {fileID: 2091674138}
   m_Layer: 0
   m_Name: StraightPath
   m_TagString: Interactable
@@ -6866,6 +6867,26 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.3927627, y: 2.8355498}
   m_EdgeRadius: 0
+--- !u!114 &2091674138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091674133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collidersToDisable:
+  - {fileID: 455578283}
+  - {fileID: 1218338212}
+  - {fileID: 88203311}
+  dialogueScript: {fileID: 1470708264}
+  triggerLine: 3
+  changeOnce: 1
+  triggerEnding: 0
 --- !u!1 &2118091315
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,7 +32,7 @@ public class Cursor1 : MonoBehaviour
         //checking hover?
         if (hit.collider != null)
         {
-            if (hit.collider.CompareTag("Interactable"))
+            if (hit.collider.CompareTag("Interactable") || hit.collider.CompareTag("Vine"))
             {
                 spriteRenderer.sprite = cursorHover;
             }
