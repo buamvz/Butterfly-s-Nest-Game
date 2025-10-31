@@ -35,12 +35,12 @@ public class EndingDecider : MonoBehaviour
         if (totalPoints >= goodEndingThreshold)
         {
             SceneManager.LoadScene(goodEndingSceneName);
-            Debug.Log("Good ending triggered!");
+            Debug.Log("good ending triggered!");
         }
         else
         {
             SceneManager.LoadScene(badEndingSceneName);
-            Debug.Log("Bad ending triggered!");
+            Debug.Log("bad ending triggered!");
         }
     }
 }
