@@ -48,6 +48,18 @@ public class DialogueConversationsManager : MonoBehaviour
 
     private void StartStep(ConversationStep step)
     {
+        if (step == null)
+        {
+            Debug.LogError($"Step {currentStep} is null!");
+            return;
+        }
+
+        if (step.speaker == null)
+        {
+            Debug.LogError($"Step {currentStep} has no speaker assigned!");
+            return;
+        }
+
         step.speaker.indexStart = step.startLine;
         step.speaker.indexEnd = step.endLine;
 
@@ -64,9 +76,12 @@ public class DialogueConversationsManager : MonoBehaviour
     private IEnumerator WaitAndAdvance()
     {
         waitingForNext = true;
+        Debug.Log($"Waiting to advance from step {currentStep}...");
         yield return new WaitForSeconds(trasitionDelay);
 
         currentStep++;
+        Debug.Log($"Advancing to step {currentStep} / total {steps.Count}");
+
         if (currentStep < steps.Count)
             StartStep(steps[currentStep]);
         else
