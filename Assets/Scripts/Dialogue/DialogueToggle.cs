@@ -20,6 +20,7 @@ public class DialogueToggle : MonoBehaviour
 
     private int lastDialogueIndex = -1;
 
+    [SerializeField] private bool triggerEnding = false;
 
     //flips completely
     public void ToggleActive()
@@ -56,6 +57,14 @@ public class DialogueToggle : MonoBehaviour
                     ToggleActive();
                     //StartCoroutine(Toggle());
                 }
+
+                if (triggerEnding)
+                {
+                    Debug.Log("[DialougeToggle] ending secisions");
+                    EndingDecider.Instance.DecideEnding();
+                }
+
+                hasToggled = true;
             }
         }
 

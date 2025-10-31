@@ -27,7 +27,7 @@ public class EndingDecider : MonoBehaviour
     public void AddPoints(int amount)
     {
         totalPoints += amount;
-        Debug.Log($"Points added: {amount}. Total now: {totalPoints}");
+        Debug.Log($"points added: {amount}. total now: {totalPoints}");
     }
 
     public void DecideEnding()

@@ -372,6 +372,7 @@ GameObject:
   - component: {fileID: 147132620}
   - component: {fileID: 147132618}
   - component: {fileID: 147132622}
+  - component: {fileID: 147132623}
   m_Layer: 0
   m_Name: ConversationManager-1
   m_TagString: Untagged
@@ -502,6 +503,24 @@ MonoBehaviour:
     startLine: 10
     endLine: 13
   trasitionDelay: 0.5
+--- !u!114 &147132623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147132617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collidersToDisable:
+  - {fileID: 147132620}
+  dialogueScript: {fileID: 649854834}
+  triggerLine: 13
+  changeOnce: 0
+  triggerEnding: 1
 --- !u!1 &162369004
 GameObject:
   m_ObjectHideFlags: 0
@@ -2653,6 +2672,54 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1983525269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1983525271}
+  - component: {fileID: 1983525270}
+  m_Layer: 0
+  m_Name: EndingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1983525270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983525269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9bfd6c87fd576143a1992a83d6be2c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalPoints: 0
+  goodEndingThreshold: 7
+  goodEndingSceneName: GoodEnding
+  badEndingSceneName: BadEnding
+--- !u!4 &1983525271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983525269}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9442929, y: -0.6310833, z: 5.3137627}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2011464575 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8061128846871113784, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
@@ -2670,6 +2737,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 20179664}
   - {fileID: 162369006}
+  - {fileID: 1983525271}
   - {fileID: 147132621}
   - {fileID: 755368464}
   - {fileID: 781371605}
