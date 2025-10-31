@@ -4272,6 +4272,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 971052255}
     - target: {fileID: 3609402699483564443, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: m_margin.x
+      value: -93.29823
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609402699483564443, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: m_margin.z
+      value: -95.50482
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609402699483564443, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 3369724368
       objectReference: {fileID: 0}
@@ -4338,6 +4346,10 @@ PrefabInstance:
     - target: {fileID: 3609402699483564443, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: m_fontColorGradient.bottomRight.r
       value: 0.81568635
+      objectReference: {fileID: 0}
+    - target: {fileID: 3817672800279869705, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -398
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: dialogues.Array.size
@@ -4414,7 +4426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &1348391843
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4947,8 +4959,8 @@ Transform:
   m_GameObject: {fileID: 1617376114}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 13.25, z: -3896.7}
-  m_LocalScale: {x: 45.82976, y: 25.140608, z: 25.140608}
+  m_LocalPosition: {x: 0, y: 2.8241549, z: -3896.7}
+  m_LocalScale: {x: 45.829765, y: 25.140608, z: 25.140608}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1080052891}
@@ -5557,7 +5569,7 @@ MonoBehaviour:
   - {fileID: 1027200597}
   choosingItem: 0
   allItemsInspected: 0
-  webPrize: 1
+  webPrize: 0
   dialogue: {fileID: 201852946}
 --- !u!1 &1817794159
 GameObject:

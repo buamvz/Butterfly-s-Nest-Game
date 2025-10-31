@@ -64,7 +64,7 @@ public class ChoosePrize : MonoBehaviour
 
         allItemsInspected = true;
     }
-    private void HandlePrizeSelection()
+    public void HandlePrizeSelection()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
@@ -73,12 +73,33 @@ public class ChoosePrize : MonoBehaviour
 
         for (int i = 0; i < prizes.Count; i++)
         {
+            if (GlobalEventManager.Instance == null)
+            {
+                Debug.LogError("GlobalEventManager not found in scene!");
+                return;
+            }
+
+            if (dialogueScript == null)
+            {
+                Debug.LogError("DialogueScript is not assigned!");
+                return;
+            }
+
+            if (i >= dialogueIndexes.Count)
+            {
+                Debug.LogError("dialogueIndexes missing entry for prize index " + i);
+                return;
+            }
+
+
+
             var prize = prizes[i];
             if (hit.collider == prize.GetCollider())
             {
                 Debug.Log($"You chose the {prize.prizeName}.");
 
-                EndingDecider.Instance.DecideEnding();
+                GlobalEventManager.Instance.PrizePointsAdded(prize.GetScore());
+
 
                 dialogueScript.indexStart = dialogueIndexes[i];
                 dialogueScript.indexEnd = dialogueIndexes[i];

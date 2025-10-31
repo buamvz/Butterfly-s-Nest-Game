@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      background-forkroadPrize_0: -8903643481675466769
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

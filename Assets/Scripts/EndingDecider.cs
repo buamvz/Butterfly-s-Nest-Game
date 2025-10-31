@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -23,6 +24,23 @@ public class EndingDecider : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void OnEnable()
+    {
+        StartCoroutine(WaitAndSubscribe());
+    }
+
+    private IEnumerator WaitAndSubscribe()
+    {
+        yield return new WaitUntil(() => GlobalEventManager.Instance != null);
+        GlobalEventManager.Instance.OnPointsAdded += AddPoints;
+    }
+
+    private void OnDisable()
+    {
+        if (GlobalEventManager.Instance != null)
+            GlobalEventManager.Instance.OnPointsAdded -= AddPoints;
     }
 
     public void AddPoints(int amount)
