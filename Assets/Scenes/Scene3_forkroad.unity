@@ -1442,7 +1442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueScript: {fileID: 1947765752}
   confirm: {fileID: 359991187}
-  loadScene: {fileID: 0}
+  loadScene: {fileID: 1885229090}
   dialogueStartLine: 0
   dialogueEndLine: 0
   anim: {fileID: 1877804487}
@@ -6407,6 +6407,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+--- !u!114 &1885229090 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2190593244809860481, guid: a2aa79a1176fd1843a1a0aef1f1a897c, type: 3}
+  m_PrefabInstance: {fileID: 1885229089}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 277ff546d152a9c418e05d2a9e77c80b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1947765752 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
