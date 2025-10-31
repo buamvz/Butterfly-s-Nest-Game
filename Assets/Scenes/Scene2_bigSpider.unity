@@ -529,6 +529,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 2055228955}
   triggerLine: 5
   changeOnce: 1
+  triggerEnding: 0
 --- !u!114 &308255019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,7 +616,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!114 &519420030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -835,6 +836,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1426772416}
   triggerLine: 10
   changeOnce: 1
+  triggerEnding: 0
 --- !u!1 &622639571
 GameObject:
   m_ObjectHideFlags: 0

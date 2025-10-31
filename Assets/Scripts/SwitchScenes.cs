@@ -39,12 +39,6 @@ public class SwitchScenes : MonoBehaviour
         SceneManager.LoadScene("Scene 2");
     }
 
-    public void LoadSettings()
-    {
-        Debug.Log("Loading Settings");
-        SceneManager.LoadScene("Settings");
-    }
-
     //crossfade player
     IEnumerator FadeOut()
     {

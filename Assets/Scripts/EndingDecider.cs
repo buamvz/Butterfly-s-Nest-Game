@@ -34,14 +34,14 @@ public class EndingDecider : MonoBehaviour
     private IEnumerator WaitAndSubscribe()
     {
         yield return new WaitUntil(() => GlobalEventManager.Instance != null);
-        GlobalEventManager.Instance.OnPointsAdded += AddPoints;
+        //GlobalEventManager.Instance.OnPointsAdded += AddPoints;
     }
 
-    private void OnDisable()
-    {
-        if (GlobalEventManager.Instance != null)
-            GlobalEventManager.Instance.OnPointsAdded -= AddPoints;
-    }
+    //private void OnDisable()
+    //{
+    //    if (GlobalEventManager.Instance != null)
+    //      //  GlobalEventManager.Instance.OnPointsAdded -= AddPoints;
+    //}
 
     public void AddPoints(int amount)
     {

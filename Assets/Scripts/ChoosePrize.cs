@@ -73,11 +73,6 @@ public class ChoosePrize : MonoBehaviour
 
         for (int i = 0; i < prizes.Count; i++)
         {
-            if (GlobalEventManager.Instance == null)
-            {
-                Debug.LogError("GlobalEventManager not found in scene!");
-                return;
-            }
 
             if (dialogueScript == null)
             {
@@ -97,9 +92,6 @@ public class ChoosePrize : MonoBehaviour
             if (hit.collider == prize.GetCollider())
             {
                 Debug.Log($"You chose the {prize.prizeName}.");
-
-                GlobalEventManager.Instance.PrizePointsAdded(prize.GetScore());
-
 
                 dialogueScript.indexStart = dialogueIndexes[i];
                 dialogueScript.indexEnd = dialogueIndexes[i];
