@@ -917,7 +917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: 'dialogues.Array.data[1]'
-      value: You brought a bouquet? For me?
+      value: You really brought a bouquet? For me?
       objectReference: {fileID: 0}
     - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: 'dialogues.Array.data[2]'
