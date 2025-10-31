@@ -88,7 +88,7 @@ public class ChoosePrize : MonoBehaviour
 
 
             var prize = prizes[i];
-            if (hit.collider == prize.GetCollider())
+            if (hit.collider == prize.GetCollider() && Input.GetMouseButtonDown(0))
             {
                 Debug.Log($"You chose the {prize.prizeName}.");
 
