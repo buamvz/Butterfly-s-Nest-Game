@@ -6,7 +6,8 @@ public class EndingDecider : MonoBehaviour
     public static EndingDecider Instance;
 
     [Header("Ending Settings")]
-    public int totalPoints = 0;  
+    public int totalPoints = 0;
+
     public int goodEndingThreshold = 10; //gooding ending pointed neeeded
     public string goodEndingSceneName = "GoodEnding";
     public string badEndingSceneName = "BadEnding";

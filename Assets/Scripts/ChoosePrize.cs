@@ -78,7 +78,7 @@ public class ChoosePrize : MonoBehaviour
             {
                 Debug.Log($"You chose the {prize.prizeName}.");
 
-                EndingDecider.Instance.AddPoints(prize.GetScore());
+                EndingDecider.Instance.DecideEnding();
 
                 dialogueScript.indexStart = dialogueIndexes[i];
                 dialogueScript.indexEnd = dialogueIndexes[i];
