@@ -17,7 +17,7 @@ public class ChoosePrize : MonoBehaviour
 
     public bool choosingItem;
     public bool allItemsInspected;
-
+    [SerializeField] private bool webPrize;
 
     [SerializeField] Dialogue dialogue;
 
@@ -32,7 +32,7 @@ public class ChoosePrize : MonoBehaviour
         if (allItemsInspected && !dialogueScript.waiting)
             choosingItem = true;
 
-        if (Input.GetMouseButtonDown(0) && choosingItem && !dialogueScript.waiting)
+        if (choosingItem && !dialogueScript.waiting)
         {
             HandlePrizeSelection();
         }
@@ -83,7 +83,9 @@ public class ChoosePrize : MonoBehaviour
                 dialogueScript.indexStart = dialogueIndexes[i];
                 dialogueScript.indexEnd = dialogueIndexes[i];
 
-                StartCoroutine(CallClosePuzzle());
+                if(!webPrize)
+                    StartCoroutine(CallClosePuzzle());
+
                 break;
             }
         }

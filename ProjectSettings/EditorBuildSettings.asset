@@ -30,6 +30,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene5_castleHallway.unity
     guid: 236fc1d176908274ca1f9b585553587f
   - enabled: 1
+    path: Assets/Scenes/Scene6_meetingChanterelle.unity
+    guid: 317b19e8cf6b15a4ab7d55bfcb489e9b
+  - enabled: 1
     path: Assets/Scenes/GoodEnding.unity
     guid: 0060ecbea8e0f7a4197c525e0ebdd7cf
   - enabled: 1
