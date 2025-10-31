@@ -87,16 +87,25 @@ public class ChoosePrize : MonoBehaviour
             }
 
 
-
             var prize = prizes[i];
             if (hit.collider == prize.GetCollider())
             {
                 Debug.Log($"You chose the {prize.prizeName}.");
 
+                if (EndingDecider.Instance != null)
+                {
+                    EndingDecider.Instance.AddPoints(prize.GetScore());
+                }
+                else
+                {
+                    Debug.LogWarning("[ChoosePrize] EndingDecider not found in scene!");
+                }
+
                 dialogueScript.indexStart = dialogueIndexes[i];
                 dialogueScript.indexEnd = dialogueIndexes[i];
+                dialogueScript.StartDialogue();
 
-                if(!webPrize)
+                if (!webPrize)
                     StartCoroutine(CallClosePuzzle());
 
                 break;
