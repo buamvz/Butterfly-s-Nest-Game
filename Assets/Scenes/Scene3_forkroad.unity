@@ -1631,6 +1631,7 @@ MonoBehaviour:
   dialogueScript: {fileID: 1330349199}
   triggerLine: 1
   changeOnce: 1
+  triggerEnding: 0
 --- !u!114 &464030420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6142,6 +6143,7 @@ GameObject:
   - component: {fileID: 1877804484}
   - component: {fileID: 1877804486}
   - component: {fileID: 1877804487}
+  - component: {fileID: 1877804488}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6282,6 +6284,14 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!81 &1877804488
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877804482}
+  m_Enabled: 1
 --- !u!1 &1879175361
 GameObject:
   m_ObjectHideFlags: 0
