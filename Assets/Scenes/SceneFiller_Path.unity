@@ -1666,7 +1666,7 @@ MonoBehaviour:
   - {fileID: 352876961}
   choosingItem: 0
   allItemsInspected: 0
-  webPrize: 1
+  dontClose: 1
   dialogue: {fileID: 445213005}
 --- !u!114 &452054544
 MonoBehaviour:
