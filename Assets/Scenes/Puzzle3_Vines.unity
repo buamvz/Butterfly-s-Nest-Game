@@ -728,6 +728,7 @@ MonoBehaviour:
   - {fileID: 2136644084}
   choosingItem: 0
   allItemsInspected: 0
+  webPrize: 0
   dialogue: {fileID: 1613548319}
 --- !u!114 &720958813
 MonoBehaviour:
@@ -2631,7 +2632,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1203353004}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1203353006
 Camera:
   m_ObjectHideFlags: 0
