@@ -2,11 +2,11 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayConversation : MonoBehaviour
+public class PuzzleCloseToggle : MonoBehaviour
 {
 
 
-        [SerializeField] BoxCollider2D convo2Collider;
+    [SerializeField] BoxCollider2D convo2Collider;
     public bool subscribed;
 
 
