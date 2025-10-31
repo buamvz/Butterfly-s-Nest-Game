@@ -4146,7 +4146,7 @@ PrefabInstance:
     - target: {fileID: 981559389126998772, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1420673937}
     - target: {fileID: 3609402699483564443, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 3369724368
