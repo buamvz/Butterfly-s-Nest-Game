@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Clips: []
   m_Markers:
     m_Objects: []
-  m_PostPlaybackState: 2
+  m_PostPlaybackState: 0
 --- !u!114 &2058369328449336255
 MonoBehaviour:
   m_ObjectHideFlags: 1
