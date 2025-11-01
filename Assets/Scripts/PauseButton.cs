@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseButton : MonoBehaviour
@@ -8,62 +8,58 @@ public class PauseButton : MonoBehaviour
     [SerializeField] private Sprite hoverSprite;
     [SerializeField] private Sprite clickSprite;
 
-    [SerializeField] private PauseMenu pauseMenu; 
 
     private SpriteRenderer spriteRenderer;
     private BoxCollider2D col;
     private bool isHovering = false;
+    private bool pauseSceneLoaded = false;
+
+    private const string pauseSceneName = "PauseMenu";
+
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         col = GetComponent<BoxCollider2D>();
-
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject); //THIS MIGHT BE THE ISSUE LATER WHNE BUTTTON IS IN ALL SCENES
     }
-
-    private void Start()
-    {
-        FindPauseMenu();
-
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    private void OnDestroy()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        FindPauseMenu();
-    }
-
-    private void FindPauseMenu()
-    {
-        if (pauseMenu == null)
-        {
-            pauseMenu = FindObjectOfType<PauseMenu>(true);
-            if (pauseMenu != null)
-                Debug.Log("[PauseButton] found PauseMenu ");
-            else
-                Debug.LogWarning("[PauseButton] missing PauseMenu ");
-        }
-    }
-
     private void OnEnable()
     {
-        PauseMenu.OnPauseStateChanged += HandlePauseStateChange;
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
 
     private void OnDisable()
     {
-        PauseMenu.OnPauseStateChanged -= HandlePauseStateChange;
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // turn back on buttpn
+        if (scene.name != pauseSceneName)
+        {
+            spriteRenderer.enabled = true;
+            col.enabled = true;
+            pauseSceneLoaded = false;
+        }
+    }
+
+    private void OnSceneUnloaded(Scene scene)
+    {
+        if (scene.name == pauseSceneName)
+        {
+            spriteRenderer.enabled = true;
+            col.enabled = true;
+            pauseSceneLoaded = false;
+
+            Debug.Log("[PauseButton] Pause menu closed → button re-enabled");
+        }
+    }
     private void OnMouseEnter()
     {
-        if (!PauseMenu.GameIsPaused)
+        if (!pauseSceneLoaded)
         {
             isHovering = true;
             spriteRenderer.sprite = hoverSprite;
@@ -72,7 +68,7 @@ public class PauseButton : MonoBehaviour
 
     private void OnMouseExit()
     {
-        if (!PauseMenu.GameIsPaused)
+        if (!pauseSceneLoaded)
         {
             isHovering = false;
             spriteRenderer.sprite = defaultSprite;
@@ -81,31 +77,28 @@ public class PauseButton : MonoBehaviour
 
     private void OnMouseDown()
     {
-        if (!PauseMenu.GameIsPaused)
+        if (!pauseSceneLoaded)
             spriteRenderer.sprite = clickSprite;
     }
 
     private void OnMouseUp()
     {
-        if (pauseMenu == null) return;
-
-        if (PauseMenu.GameIsPaused)
-            pauseMenu.Resume();
-
-        else
-            pauseMenu.Pause();
-
-        spriteRenderer.sprite = defaultSprite;
-        isHovering = false;
+        if (!pauseSceneLoaded)
+        {
+            spriteRenderer.sprite = defaultSprite;
+            isHovering = false;
+            OpenPauseScene();
+        }
     }
 
-    private void HandlePauseStateChange(bool isPaused)
+    private void OpenPauseScene()
     {
+        SceneManager.LoadScene(pauseSceneName, LoadSceneMode.Additive);
+        pauseSceneLoaded = true;
 
-        spriteRenderer.sprite = defaultSprite;
-        spriteRenderer.enabled = !isPaused;
-        if (col != null) col.enabled = !isPaused;
+        spriteRenderer.enabled = false;
+        col.enabled = false;
 
-        isHovering = false;
+        Debug.Log($"[PauseButton] Loaded pause scene: {pauseSceneName}");
     }
 }
