@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BackgroundController : MonoBehaviour
 {
@@ -9,6 +10,15 @@ public class BackgroundController : MonoBehaviour
     [SerializeField] private GameObject darkBackground;
 
     public PuzzleManager puzzleManager;
+
+    private void Update()
+    {
+        if (!SceneManager.GetSceneByName("Scene5_castleHallway").isLoaded)
+        {
+            Debug.Log("destroy background");
+            DestroyBackground();
+        }
+    }
 
     private void Awake()
     {
@@ -44,6 +54,11 @@ public class BackgroundController : MonoBehaviour
         }
 
         Debug.Log("background chanegd to " + (allLightsOn ? "Light" : "Dark"));
+    }
+
+    public void DestroyBackground()
+    {
+        Destroy(gameObject);
     }
 
 }

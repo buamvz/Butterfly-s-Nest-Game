@@ -3417,63 +3417,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9019439, y: 1.7495279}
   m_EdgeRadius: 0
---- !u!1001 &1421078998
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 107116349908201904, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 107116349908201904, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 107116349908201904, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107116349908201904, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 107116349908201904, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107116349908201904, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107116349908201904, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107116349908201904, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107116349908201904, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 107116349908201904, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8873991622082567099, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
-      propertyPath: m_Name
-      value: Cursor
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 59f52bcfeee1a964a99a1ba1e183e96f, type: 3}
 --- !u!4 &1443833985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 142482257247175891, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
@@ -3590,6 +3533,8 @@ PlayableDirector:
     value: {fileID: 2094307917}
   - key: {fileID: 3394367909911862005, guid: 549831822ee37a6418f5eae2f8d15e40, type: 2}
     value: {fileID: 1443833986}
+  - key: {fileID: -9082420748877307152, guid: 549831822ee37a6418f5eae2f8d15e40, type: 2}
+    value: {fileID: 1899430122}
   m_ExposedReferences:
     m_References:
     - 6f29bcf0c25876046ba74e00c95adf50: {fileID: 0}
@@ -4478,6 +4423,7 @@ GameObject:
   - component: {fileID: 1899430117}
   - component: {fileID: 1899430121}
   - component: {fileID: 1899430120}
+  - component: {fileID: 1899430122}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -4555,7 +4501,7 @@ MonoBehaviour:
   - {fileID: 1273761261}
   choosingItem: 0
   allItemsInspected: 1
-  webPrize: 0
+  dontClose: 0
   dialogue: {fileID: 1443833986}
 --- !u!114 &1899430121
 MonoBehaviour:
@@ -4576,8 +4522,38 @@ MonoBehaviour:
   - {fileID: 8111116}
   choosingItem: 0
   allItemsInspected: 1
-  webPrize: 0
+  dontClose: 0
   dialogue: {fileID: 1443833986}
+--- !u!114 &1899430122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899430116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: fa88b5320886f2a4badfe81aa6157ba8, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1899430117}
+          m_TargetAssemblyTypeName: BackgroundController, Assembly-CSharp
+          m_MethodName: DestroyBackground
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!224 &1967958634 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3817672800279869705, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
@@ -4828,7 +4804,6 @@ SceneRoots:
   - {fileID: 426437770}
   - {fileID: 1103920323}
   - {fileID: 1899430119}
-  - {fileID: 1421078998}
   - {fileID: 1059433015}
   - {fileID: 490520897}
   - {fileID: 1863691073}
