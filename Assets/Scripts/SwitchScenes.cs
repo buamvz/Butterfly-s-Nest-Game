@@ -57,7 +57,7 @@ public class SwitchScenes : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Quit Game");
-        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene("TitleScreen");
+        Application.Quit();
+        
     }
 }

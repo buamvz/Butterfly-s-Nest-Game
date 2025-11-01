@@ -13,9 +13,19 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
-        mainEventSystem = FindObjectOfType<EventSystem>();
-        if (mainEventSystem != null)
-            mainEventSystem.enabled = false;
+        // Find all active EventSystems in loaded scenes
+        EventSystem[] allEventSystems = FindObjectsOfType<EventSystem>();
+
+        foreach (var es in allEventSystems)
+        {
+            // If it's not in the PauseMenu scene, disable it
+            if (es.gameObject.scene.name != pauseSceneName)
+            {
+                mainEventSystem = es;
+                es.enabled = false;
+                Debug.Log($"[PauseMenu] Disabled EventSystem in scene: {es.gameObject.scene.name}");
+            }
+        }
 
         Time.timeScale = 0f;
         Debug.Log("[PauseMenu] Game paused.");

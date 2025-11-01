@@ -38,6 +38,10 @@ public class EndingDecider : MonoBehaviour
                 Instance.goodEndingConversation = goodEndingConversation;
             if (badEndingConversation != null)
                 Instance.badEndingConversation = badEndingConversation;
+            if (goodEndingConversation != null)
+                Instance.goodEndingConversationObject = goodEndingConversationObject;
+            if (badEndingConversation != null)
+                Instance.badEndingConversationObject = badEndingConversationObject;
             if (mainCOnversation != null)
                 Instance.mainCOnversation = mainCOnversation;
 

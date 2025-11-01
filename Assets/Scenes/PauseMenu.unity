@@ -214,6 +214,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1935701136}
+  - {fileID: 1309307424}
+  - {fileID: 418881372}
+  - {fileID: 2134630764}
+  - {fileID: 1690415112}
+  - {fileID: 1824866093}
   - {fileID: 1408084137}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -391,7 +396,7 @@ RectTransform:
   m_Children:
   - {fileID: 1167834524}
   - {fileID: 565759981}
-  m_Father: {fileID: 1935701136}
+  m_Father: {fileID: 93699495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -442,7 +447,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1408084139}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -509,7 +514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &517630799
 Transform:
   m_ObjectHideFlags: 0
@@ -1284,93 +1289,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 965649237}
   m_CullTransparentMesh: 1
---- !u!1001 &984662581
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1935701136}
-    m_Modifications:
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 120.29509
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 120.29509
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 120.29509
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 452.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 121.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.1783
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5277134101607589573, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_Name
-      value: InteractionBlocker
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490438768243532709, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490438768243532709, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_IncludeLayers.m_Bits
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 6490438768243532709, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-      propertyPath: m_LayerOverridePriority
-      value: 999
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 1627662883024101112, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
---- !u!4 &984662582 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 958826432571283541, guid: 75905139860c9a34fb5ebb60b08b2cd3, type: 3}
-  m_PrefabInstance: {fileID: 984662581}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1150675640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,7 +1592,7 @@ RectTransform:
   m_Children:
   - {fileID: 965649238}
   - {fileID: 1626934123}
-  m_Father: {fileID: 1935701136}
+  m_Father: {fileID: 93699495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1796,7 +1714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1408084137}
-  - component: {fileID: 1408084139}
+  - component: {fileID: 1408084138}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -1820,7 +1738,7 @@ Transform:
   - {fileID: 517630799}
   m_Father: {fileID: 93699495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1408084139
+--- !u!114 &1408084138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2217,7 +2135,7 @@ RectTransform:
   m_Children:
   - {fileID: 267017065}
   - {fileID: 562604514}
-  m_Father: {fileID: 1935701136}
+  m_Father: {fileID: 93699495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2268,7 +2186,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1408084139}
+      - m_Target: {fileID: 1408084138}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
@@ -2487,7 +2405,7 @@ RectTransform:
   m_Children:
   - {fileID: 1150675641}
   - {fileID: 1796782739}
-  m_Father: {fileID: 1935701136}
+  m_Father: {fileID: 93699495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2538,7 +2456,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1408084139}
+      - m_Target: {fileID: 1408084138}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -2620,12 +2538,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1397605749}
-  - {fileID: 984662582}
-  - {fileID: 1309307424}
-  - {fileID: 418881372}
-  - {fileID: 2134630764}
-  - {fileID: 1690415112}
-  - {fileID: 1824866093}
   m_Father: {fileID: 93699495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2659,7 +2571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.69411767}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2716,7 +2628,7 @@ RectTransform:
   m_Children:
   - {fileID: 962188639}
   - {fileID: 671074875}
-  m_Father: {fileID: 1935701136}
+  m_Father: {fileID: 93699495}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2767,7 +2679,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1408084139}
+      - m_Target: {fileID: 1408084138}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
