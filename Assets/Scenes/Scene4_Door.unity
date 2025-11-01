@@ -2717,7 +2717,7 @@ MonoBehaviour:
   - {fileID: 810807145}
   dialogueScript: {fileID: 450706049}
   triggerLine: 6
-  changeOnce: 0
+  changeOnce: 1
   triggerEnding: 0
 --- !u!114 &810807147
 MonoBehaviour:
