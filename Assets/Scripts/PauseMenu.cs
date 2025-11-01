@@ -1,16 +1,22 @@
-﻿using Unity.VisualScripting;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using System;
+﻿using System;
 using System.Linq;
+using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
 
     private const string pauseSceneName = "PauseMenu";
+    private EventSystem mainEventSystem;
 
     private void Start()
     {
+        mainEventSystem = FindObjectOfType<EventSystem>();
+        if (mainEventSystem != null)
+            mainEventSystem.enabled = false;
+
         Time.timeScale = 0f;
         Debug.Log("[PauseMenu] Game paused.");
     }
@@ -18,6 +24,10 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         Time.timeScale = 1f;
+
+        if (mainEventSystem != null)
+            mainEventSystem.enabled = true;
+
         SceneManager.UnloadSceneAsync(pauseSceneName);
         Debug.Log("[PauseMenu] Game resumed.");
     }
@@ -25,6 +35,10 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1f;
+
+        if (mainEventSystem != null)
+            mainEventSystem.enabled = true;
+
         SceneManager.LoadScene("TitleScreen");
         Debug.Log("[PauseMenu] Returning to title.");
     }

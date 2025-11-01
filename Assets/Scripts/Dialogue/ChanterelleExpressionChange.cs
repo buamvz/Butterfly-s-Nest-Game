@@ -15,6 +15,11 @@ public class ChanterelleExpressionChange : MonoBehaviour
     public List<int> blushLines = new List<int>();
     private void Update()
     {
+        if (dialogueScript.dialogues.Count - 1 == dialogueScript.index && !dialogueScript.waiting)
+        {
+            this.enabled = false;
+        }
+
         int currentIndex = dialogueScript.index;
 
         // reset all expression
@@ -56,6 +61,7 @@ public class ChanterelleExpressionChange : MonoBehaviour
                 ResetAllExpressions();
             }
         }
+
 
     }
 

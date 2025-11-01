@@ -1686,7 +1686,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758500128}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c6c17510022a194b94fed3e40079fa9, type: 3}
   m_Name: 
@@ -2597,7 +2597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[3]'
-      value: Or maybe I turn blow the rest out?
+      value: Or maybe I can blow the rest out?
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[4]'
@@ -2658,6 +2658,7 @@ GameObject:
   - component: {fileID: 1101531509}
   - component: {fileID: 1101531508}
   - component: {fileID: 1101531510}
+  - component: {fileID: 1101531511}
   m_Layer: 0
   m_Name: light hallway background all lights on
   m_TagString: Untagged
@@ -2743,7 +2744,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101531507}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dd07b8aeab3f824c87128b96808e056, type: 3}
   m_Name: 
@@ -2756,7 +2757,26 @@ MonoBehaviour:
   choosingItem: 0
   allItemsInspected: 1
   dontClose: 1
+  hallwayPrize: 1
   dialogue: {fileID: 1443833986}
+--- !u!114 &1101531511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1101531507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collidersToDisable:
+  - {fileID: 1273761262}
+  dialogueScript: {fileID: 1443833986}
+  triggerLine: 9
+  changeOnce: 1
+  triggerEnding: 0
 --- !u!1001 &1103920323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3223,6 +3243,7 @@ GameObject:
   - component: {fileID: 1284332888}
   - component: {fileID: 1284332887}
   - component: {fileID: 1284332889}
+  - component: {fileID: 1284332890}
   m_Layer: 0
   m_Name: light hallway background all lights off
   m_TagString: Untagged
@@ -3308,7 +3329,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284332886}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dd07b8aeab3f824c87128b96808e056, type: 3}
   m_Name: 
@@ -3321,7 +3342,26 @@ MonoBehaviour:
   choosingItem: 0
   allItemsInspected: 1
   dontClose: 1
+  hallwayPrize: 1
   dialogue: {fileID: 1443833986}
+--- !u!114 &1284332890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284332886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collidersToDisable:
+  - {fileID: 8111117}
+  dialogueScript: {fileID: 1443833986}
+  triggerLine: 8
+  changeOnce: 1
+  triggerEnding: 0
 --- !u!1 &1409516580
 GameObject:
   m_ObjectHideFlags: 0
@@ -3485,7 +3525,7 @@ BoxCollider2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_LayerOverridePriority: 0
+  m_LayerOverridePriority: 5
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3502,7 +3542,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.26390934, y: 0.59939766}
+  m_Offset: {x: 0.03432274, y: 0.59939766}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3512,7 +3552,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 19.02281, y: 10.062933}
+  m_Size: {x: 18.563637, y: 10.062933}
   m_EdgeRadius: 0
 --- !u!320 &1458000253
 PlayableDirector:
@@ -3533,8 +3573,6 @@ PlayableDirector:
     value: {fileID: 2094307917}
   - key: {fileID: 3394367909911862005, guid: 549831822ee37a6418f5eae2f8d15e40, type: 2}
     value: {fileID: 1443833986}
-  - key: {fileID: -9082420748877307152, guid: 549831822ee37a6418f5eae2f8d15e40, type: 2}
-    value: {fileID: 1899430122}
   m_ExposedReferences:
     m_References:
     - 6f29bcf0c25876046ba74e00c95adf50: {fileID: 0}
@@ -3568,6 +3606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collidersToDisable:
   - {fileID: 1458000252}
+  - {fileID: 1197709114}
   dialogueScript: {fileID: 1443833986}
   triggerLine: 9
   changeOnce: 1
@@ -3586,6 +3625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collidersToDisable:
   - {fileID: 1458000252}
+  - {fileID: 1197709114}
   dialogueScript: {fileID: 1443833986}
   triggerLine: 8
   changeOnce: 1
@@ -4421,8 +4461,6 @@ GameObject:
   - component: {fileID: 1899430119}
   - component: {fileID: 1899430118}
   - component: {fileID: 1899430117}
-  - component: {fileID: 1899430121}
-  - component: {fileID: 1899430120}
   - component: {fileID: 1899430122}
   m_Layer: 0
   m_Name: Background
@@ -4482,48 +4520,6 @@ Transform:
   - {fileID: 855744958}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1899430120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899430116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd07b8aeab3f824c87128b96808e056, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  managerScript: {fileID: 490520896}
-  dialogueScript: {fileID: 1443833986}
-  dialogueIndexes: 09000000
-  prizes:
-  - {fileID: 1273761261}
-  choosingItem: 0
-  allItemsInspected: 1
-  dontClose: 0
-  dialogue: {fileID: 1443833986}
---- !u!114 &1899430121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1899430116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd07b8aeab3f824c87128b96808e056, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  managerScript: {fileID: 490520896}
-  dialogueScript: {fileID: 1443833986}
-  dialogueIndexes: 08000000
-  prizes:
-  - {fileID: 8111116}
-  choosingItem: 0
-  allItemsInspected: 1
-  dontClose: 0
-  dialogue: {fileID: 1443833986}
 --- !u!114 &1899430122
 MonoBehaviour:
   m_ObjectHideFlags: 0

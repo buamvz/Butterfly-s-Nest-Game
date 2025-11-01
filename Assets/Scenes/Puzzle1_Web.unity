@@ -1205,6 +1205,100 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7265403549414389362, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
   m_PrefabInstance: {fileID: 1256877749}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &731588652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 731588656}
+  - component: {fileID: 731588655}
+  - component: {fileID: 731588654}
+  - component: {fileID: 731588653}
+  m_Layer: 0
+  m_Name: StopChosing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &731588653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731588652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collidersToDisable:
+  - {fileID: 1430597281}
+  - {fileID: 135395042}
+  - {fileID: 1027200599}
+  dialogueScript: {fileID: 201852946}
+  triggerLine: 8
+  changeOnce: 1
+  triggerEnding: 0
+--- !u!114 &731588654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731588652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collidersToDisable:
+  - {fileID: 1430597281}
+  - {fileID: 135395042}
+  - {fileID: 1027200599}
+  dialogueScript: {fileID: 201852946}
+  triggerLine: 7
+  changeOnce: 1
+  triggerEnding: 0
+--- !u!114 &731588655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731588652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collidersToDisable:
+  - {fileID: 1430597281}
+  - {fileID: 135395042}
+  - {fileID: 1027200599}
+  dialogueScript: {fileID: 201852946}
+  triggerLine: 6
+  changeOnce: 1
+  triggerEnding: 0
+--- !u!4 &731588656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731588652}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.85719335, y: 5.1645384, z: 31.253462}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809901021
 GameObject:
   m_ObjectHideFlags: 0
@@ -6796,3 +6890,4 @@ SceneRoots:
   - {fileID: 1256877749}
   - {fileID: 1942079008}
   - {fileID: 1203114402}
+  - {fileID: 731588656}

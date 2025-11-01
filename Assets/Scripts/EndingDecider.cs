@@ -17,6 +17,13 @@ public class EndingDecider : MonoBehaviour
     [SerializeField] DialogueConversationsManager goodEndingConversation;
     [SerializeField] DialogueConversationsManager badEndingConversation;
 
+    [SerializeField] GameObject goodEndingConversationObject;
+    [SerializeField] GameObject badEndingConversationObject;
+
+
+
+    [SerializeField] DialogueConversationsManager mainCOnversation;
+
     private void Awake()
     {
         if (Instance == null)
@@ -24,9 +31,17 @@ public class EndingDecider : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else
+        else if (Instance != this)
         {
-            Destroy(gameObject);
+            // Update conversation references on the persistent instance
+            if (goodEndingConversation != null)
+                Instance.goodEndingConversation = goodEndingConversation;
+            if (badEndingConversation != null)
+                Instance.badEndingConversation = badEndingConversation;
+            if (mainCOnversation != null)
+                Instance.mainCOnversation = mainCOnversation;
+
+            Destroy(gameObject); // Destroy only the duplicate GameObject, not the persistent data
         }
     }
 
@@ -56,8 +71,14 @@ public class EndingDecider : MonoBehaviour
 
     IEnumerator PlayEnding()
     {
+        //wait for other conversation
+        while (mainCOnversation.conversationActive)
+            yield return null;
+
         if (totalPoints >= goodEndingThreshold)
         {
+            badEndingConversationObject.SetActive(false);
+
             goodEndingConversation.StartConversation();
 
             while (goodEndingConversation.conversationActive)
@@ -69,6 +90,8 @@ public class EndingDecider : MonoBehaviour
         }
         else
         {
+            goodEndingConversationObject.SetActive(false);
+
             badEndingConversation.StartConversation();
 
             while (badEndingConversation.conversationActive)

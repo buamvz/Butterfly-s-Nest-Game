@@ -18,6 +18,7 @@ public class ChoosePrize : MonoBehaviour
     public bool choosingItem;
     public bool allItemsInspected;
     [SerializeField] private bool dontClose;
+    [SerializeField] private bool hallwayPrize;
 
     [SerializeField] Dialogue dialogue;
 
@@ -26,7 +27,9 @@ public class ChoosePrize : MonoBehaviour
         if (!allItemsInspected && AllPrizesInspected() && !dialogueScript.waiting)
         {
             dialogueScript.EndDialogue();
-            StartCoroutine(Wait());
+
+            if(!hallwayPrize)
+                StartCoroutine(Wait());
         }
 
         if (allItemsInspected && !dialogueScript.waiting)

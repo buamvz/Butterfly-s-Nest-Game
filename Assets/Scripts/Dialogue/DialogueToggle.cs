@@ -28,7 +28,7 @@ public class DialogueToggle : MonoBehaviour
         foreach (BoxCollider2D collider in collidersToDisable)
         {
             collider.enabled = !collider.enabled;
-            Debug.Log("toggle active");
+            //Debug.Log("toggle active");
         }
     }
 

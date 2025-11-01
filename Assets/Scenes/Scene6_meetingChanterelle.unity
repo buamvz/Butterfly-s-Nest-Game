@@ -694,6 +694,7 @@ GameObject:
   - component: {fileID: 147132618}
   - component: {fileID: 147132622}
   - component: {fileID: 147132623}
+  - component: {fileID: 147132624}
   m_Layer: 0
   m_Name: ConversationManager-1
   m_TagString: Untagged
@@ -843,6 +844,24 @@ MonoBehaviour:
   triggerLine: 13
   changeOnce: 0
   triggerEnding: 1
+--- !u!114 &147132624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147132617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collidersToDisable:
+  - {fileID: 147132620}
+  dialogueScript: {fileID: 649854834}
+  triggerLine: 13
+  changeOnce: 0
+  triggerEnding: 0
 --- !u!1 &162369004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,8 +1115,11 @@ MonoBehaviour:
   goodEndingThreshold: 7
   goodEndingSceneName: GoodEnding
   badEndingSceneName: BadEnding
-  goodEndingConversation: {fileID: 0}
-  badEndingConversation: {fileID: 0}
+  goodEndingConversation: {fileID: 1524955108}
+  badEndingConversation: {fileID: 1268024601}
+  goodEndingConversationObject: {fileID: 1524955106}
+  badEndingConversationObject: {fileID: 1268024599}
+  mainCOnversation: {fileID: 147132622}
 --- !u!4 &269170933
 Transform:
   m_ObjectHideFlags: 0
@@ -1725,7 +1747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[2]'
-      value: And what am I to do with it?
+      value: Junk and some plants from my forest, and what am I to do with it?
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[3]'
@@ -1858,11 +1880,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueScript: {fileID: 522712442}
   anim: {fileID: 781371607}
-  talkingLines: 
+  talkingLines: 01000000
   talking2Lines: 
-  smileLines: 02000000
-  disgustLines: 
-  blushLines: 000000000200000003000000
+  smileLines: 0400000005000000
+  disgustLines: 02000000
+  blushLines: 
 --- !u!95 &561994517 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3274015912171334453, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
@@ -1894,8 +1916,8 @@ Transform:
   m_GameObject: {fileID: 583349597}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 14, z: -3896.6992}
-  m_LocalScale: {x: 56.783752, y: 42.068203, z: 25.140541}
+  m_LocalPosition: {x: -1.72, y: 14, z: -3896.6992}
+  m_LocalScale: {x: 64.44024, y: 42.068203, z: 25.140541}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 649854836}
@@ -2569,7 +2591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[4]'
-      value: Ehe, you're not the first to think that.
+      value: Heh, you're not the first to think that...
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[5]'
@@ -2590,7 +2612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[9]'
-      value: And... I decided then, I had to know her.
+      value: And... I decided then, I had to know her myself.
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[10]'
@@ -2742,8 +2764,8 @@ Transform:
   m_GameObject: {fileID: 1151561561}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 14, z: -3896.6992}
-  m_LocalScale: {x: 56.783752, y: 42.068203, z: 25.140541}
+  m_LocalPosition: {x: -1.72, y: 14, z: -3896.6992}
+  m_LocalScale: {x: 64.44024, y: 42.068203, z: 25.140541}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 484617651}
@@ -3012,8 +3034,8 @@ Transform:
   m_GameObject: {fileID: 1220155161}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 14, z: -3896.6992}
-  m_LocalScale: {x: 56.783752, y: 42.068203, z: 25.140541}
+  m_LocalPosition: {x: -1.72, y: 14, z: -3896.6992}
+  m_LocalScale: {x: 64.44024, y: 42.068203, z: 25.140541}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 522712445}
@@ -3571,7 +3593,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1524955107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4236,7 +4258,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8061128846871113784, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: 'dialogues.Array.data[0]'
-      value: It wan't just those candles, it's so dark everywhere.
+      value: It wasn't just those candles, it's so dark everywhere.
       objectReference: {fileID: 0}
     - target: {fileID: 8061128846871113784, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: 'dialogues.Array.data[1]'
