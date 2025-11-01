@@ -1612,14 +1612,14 @@ PrefabInstance:
     - target: {fileID: 2883245191059585696, guid: c50e3f8e1eb7b2145b89f75f99342bc5, type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 807658634}
     - target: {fileID: 3260071279891264645, guid: c50e3f8e1eb7b2145b89f75f99342bc5, type: 3}
       propertyPath: m_Name
       value: PauseButton Canvas
       objectReference: {fileID: 0}
     - target: {fileID: 3260071279891264645, guid: c50e3f8e1eb7b2145b89f75f99342bc5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7335368930282532550, guid: c50e3f8e1eb7b2145b89f75f99342bc5, type: 3}
       propertyPath: pauseMenu

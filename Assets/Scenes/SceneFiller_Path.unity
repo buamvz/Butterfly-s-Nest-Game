@@ -4994,6 +4994,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2883245191059585696, guid: c50e3f8e1eb7b2145b89f75f99342bc5, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1420673937}
     - target: {fileID: 3260071279891264645, guid: c50e3f8e1eb7b2145b89f75f99342bc5, type: 3}
       propertyPath: m_Name
       value: PauseButton Canvas
