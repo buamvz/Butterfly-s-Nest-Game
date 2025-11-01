@@ -153,7 +153,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: dialogues.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: 'dialogues.Array.data[0]'
@@ -170,6 +170,14 @@ PrefabInstance:
     - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: 'dialogues.Array.data[3]'
       value: Yet the path seemed left clear, as if just for her.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[4]'
+      value: So she did as the kind spider said.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: 'dialogues.Array.data[5]'
+      value: Following the path until she came to a fork in the road...
       objectReference: {fileID: 0}
     - target: {fileID: 3246720736364196607, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_Camera
@@ -197,7 +205,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 33fcf6e4f45e0344c9aa1410d26e5a7f, type: 2}
     - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_SceneBindings.Array.size
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_SceneBindings.Array.data[3].key
@@ -228,6 +236,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 324284599168747552, guid: 33fcf6e4f45e0344c9aa1410d26e5a7f, type: 2}
     - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_SceneBindings.Array.data[10].key
+      value: 
+      objectReference: {fileID: 1889383417291142989, guid: 33fcf6e4f45e0344c9aa1410d26e5a7f, type: 2}
+    - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_SceneBindings.Array.data[11].key
+      value: 
+      objectReference: {fileID: -362861160578788644, guid: 33fcf6e4f45e0344c9aa1410d26e5a7f, type: 2}
+    - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_SceneBindings.Array.data[3].value
       value: 
       objectReference: {fileID: 202463847}
@@ -255,6 +271,14 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[9].value
       value: 
       objectReference: {fileID: 530026186}
+    - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_SceneBindings.Array.data[10].value
+      value: 
+      objectReference: {fileID: 530026186}
+    - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
+      propertyPath: m_SceneBindings.Array.data[11].value
+      value: 
+      objectReference: {fileID: 1740655115}
     - target: {fileID: 5159113994498864923, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_ExposedReferences.m_References.Array.size
       value: 2
@@ -329,7 +353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8409068747277811655, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8536361131445412731, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: m_LocalScale.x
@@ -3350,7 +3374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[1]'
-      value: This must be the crossroads the spider was talking about.
+      value: A poem?
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[2]'
@@ -4894,7 +4918,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: dialogues.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[0]'
@@ -4927,6 +4951,10 @@ PrefabInstance:
     - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: 'dialogues.Array.data[7]'
       value: No, not that way.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5714920212123678771, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
+      propertyPath: 'dialogues.Array.data[8]'
+      value: A poem?
       objectReference: {fileID: 0}
     - target: {fileID: 6225780038206617434, guid: c77a61fcab331ea4d8b44003d171e2cf, type: 3}
       propertyPath: m_Name
@@ -5557,7 +5585,8 @@ Transform:
   m_LocalPosition: {x: 5.14, y: -4.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1740655116}
   m_Father: {fileID: 1266638269}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1652335782
@@ -5649,7 +5678,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 110
+  m_SortingOrder: 50
   m_Sprite: {fileID: -5026286090684738073, guid: e2036d83fb2eaac4c9afedc24dc2ec56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5783,6 +5812,120 @@ Transform:
   - {fileID: 1330349198}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1740655115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1740655116}
+  - component: {fileID: 1740655119}
+  - component: {fileID: 1740655118}
+  - component: {fileID: 1740655117}
+  m_Layer: 0
+  m_Name: Collider-HintItem(Dialogue)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1740655116
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740655115}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.14, y: 4.01, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1652335781}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1740655117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740655115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd11b07162ab5ec40bc6813e4ee70294, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collidersToDisable:
+  - {fileID: 1740655119}
+  dialogueScript: {fileID: 1947765752}
+  triggerLine: 8
+  changeOnce: 1
+  triggerEnding: 0
+--- !u!114 &1740655118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740655115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e53280ab44a99724baf3c6606b3d6c05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueScript: {fileID: 1947765752}
+  colliderInteraction: {fileID: 1740655119}
+  dialogueStartLine: 8
+  dialogueEndLine: 8
+--- !u!61 &1740655119
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740655115}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 5.0532074, y: -4.0535517}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.72, y: 1.42}
+    newSize: {x: 1.72, y: 1.42}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 17.045872, y: 9.497288}
+  m_EdgeRadius: 0
 --- !u!1 &1766310727
 GameObject:
   m_ObjectHideFlags: 0
@@ -7175,8 +7318,8 @@ SceneRoots:
   - {fileID: 1221955125}
   - {fileID: 1127233055}
   - {fileID: 149822331}
-  - {fileID: 43187451}
   - {fileID: 671556822}
+  - {fileID: 43187451}
   - {fileID: 1951940214}
   - {fileID: 492297391}
   - {fileID: 345457001}
