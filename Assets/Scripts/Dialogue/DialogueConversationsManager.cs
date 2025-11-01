@@ -11,7 +11,7 @@ public class DialogueConversationsManager : MonoBehaviour
     [SerializeField] private float trasitionDelay = 0.5f;
 
     private int currentStep = 0;
-    private bool conversationActive = false;
+    public bool conversationActive = false;
     private bool waitingForNext = false;
 
     private void Update()

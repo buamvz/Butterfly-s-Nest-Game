@@ -937,7 +937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: 'dialogues.Array.data[6]'
-      value: Would you care to join me for a dance to reward you?
+      value: Would you care to join me for a dance?
       objectReference: {fileID: 0}
     - target: {fileID: 3122936796190585782, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: 'dialogues.Array.data[7]'
@@ -1093,7 +1093,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8061128846871113784, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
       propertyPath: 'dialogues.Array.data[3]'
-      value: (Gosh I knew this was a silly idea, who in their right mind would want
+      value: (Gosh, I knew this was a silly idea, who in their right mind would want
         such a bouquet?!)
       objectReference: {fileID: 0}
     - target: {fileID: 8061128846871113784, guid: e69e978f047f78f45b0787ffb63cb876, type: 3}
